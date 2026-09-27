@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ledger Noir · Realistic Card Faces</title>
+<style>
+  :root{ --bg:#070709; --txt:#F4F4F6; --txt2:#9CA3AF; --line:#26262e; --teal:#2DD4BF; }
+  *{box-sizing:border-box;margin:0;padding:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;}
+  body{background:#000;color:var(--txt);padding:38px 22px 90px;}
+  h1{font-size:28px;font-weight:800;background:linear-gradient(90deg,#2DD4BF,#34D399);-webkit-background-clip:text;-webkit-text-fill-color:transparent;}
+  .lede{color:var(--txt2);font-size:13.5px;margin:6px 0 26px;max-width:820px;}
+  .note{background:#0d0d11;border:1px solid var(--line);border-radius:12px;padding:13px 15px;color:var(--txt2);font-size:12.5px;margin-bottom:30px;max-width:820px;}
+  .row{display:flex;gap:30px;flex-wrap:wrap;margin-bottom:34px;}
+  .col h2{font-size:14px;color:var(--txt2);letter-spacing:1px;text-transform:uppercase;margin-bottom:14px;}
+  /* realistic credit card — ISO 1.586:1 */
+  .card{width:340px;height:214px;border-radius:16px;position:relative;overflow:hidden;color:#fff;
+        box-shadow:0 16px 40px rgba(0,0,0,.55);padding:20px;display:flex;flex-direction:column;justify-content:space-between;}
+  /* brand gradients */
+  .axis{background:linear-gradient(135deg,#7a1038 0%,#a31650 38%,#5c0c2b 100%);}
+  .idfc{background:linear-gradient(135deg,#8c1f2a 0%,#c0392b 40%,#4a0e14 100%);}
+  /* sheen */
+  .card::after{content:"";position:absolute;inset:0;background:
+     radial-gradient(120% 80% at 80% -10%,rgba(255,255,255,.18),transparent 50%),
+     linear-gradient(115deg,transparent 40%,rgba(255,255,255,.08) 50%,transparent 60%);pointer-events:none;}
+  .top{display:flex;justify-content:space-between;align-items:flex-start;z-index:2;}
+  .bank{height:30px;background:#fff;border-radius:6px;padding:4px 8px;display:flex;align-items:center;}
+  .bank img{height:22px;display:block;}
+  .bank .fallback{font-weight:800;color:#111;font-size:13px;letter-spacing:.3px;}
+  .ctl{font-size:20px;opacity:.9;}
+  .mid{display:flex;align-items:center;gap:14px;z-index:2;margin-top:-6px;}
+  .chip{width:46px;height:34px;border-radius:7px;background:linear-gradient(135deg,#f7e08a,#caa23c 60%,#9c7a25);position:relative;box-shadow:inset 0 0 0 1px rgba(0,0,0,.15);}
+  .chip::before{content:"";position:absolute;inset:6px;border:1px solid rgba(0,0,0,.25);border-radius:3px;}
+  .chip::after{content:"";position:absolute;top:50%;left:4px;right:4px;height:1px;background:rgba(0,0,0,.25);}
+  .wave{font-size:22px;opacity:.85;transform:rotate(0deg);}
+  .num{font-family:"Courier New",monospace;font-size:21px;letter-spacing:3px;font-weight:700;z-index:2;
+       text-shadow:0 1px 1px rgba(0,0,0,.4);}
+  .bottom{display:flex;justify-content:space-between;align-items:flex-end;z-index:2;}
+  .bottom .lbl{font-size:7.5px;letter-spacing:1.5px;opacity:.7;text-transform:uppercase;}
+  .bottom .val{font-size:12.5px;font-weight:600;letter-spacing:.5px;text-transform:uppercase;}
+  .net{height:34px;display:flex;align-items:center;}
+  .net .visa{font-style:italic;font-weight:800;font-size:24px;letter-spacing:1px;color:#fff;text-shadow:0 1px 2px rgba(0,0,0,.4);}
+  .net .rupay{font-weight:800;font-size:15px;color:#fff;}
+  .net .rupay b{color:#5fd38d;}
+  .net .mc{display:flex;align-items:center;}
+  .net .mc i{width:24px;height:24px;border-radius:50%;display:block;}
+  .net .mc .r{background:#eb001b;} .net .mc .y{background:#f79e1b;margin-left:-10px;mix-blend-mode:screen;}
+  /* utilization strip under card (as it appears in Bills) */
+  .util{width:340px;margin-top:10px;font-size:11px;color:var(--txt2);}
+  .bar{height:6px;border-radius:3px;background:#1c1c25;overflow:hidden;margin-top:5px;}
+  .bar>i{display:block;height:100%;border-radius:3px;background:var(--teal);}
+  .tips{margin-top:6px;max-width:820px;}
+  .tips li{font-size:12.5px;color:var(--txt2);margin:7px 0 7px 18px;}
+  .tips b{color:var(--txt);}
+  .src{font-size:11px;color:#6b7280;margin-top:4px;}
+</style>
+</head>
+<body>
+<h1>Realistic Card Faces — dummy</h1>
+<p class="lede">Bank logos are <b>fetched live from the internet</b> (Clearbit logo API, by bank domain). The rest — brand gradient, EMV chip, contactless, embossed number, network mark, name, valid-thru — is rendered. Network marks shown as styled stand-ins. Data is your real cards.</p>
+<div class="note">If a bank logo box shows text instead of an image, the logo fetch was blocked/offline — the app would fall back to the bank name exactly like that. No real card <i>photo</i> is used (not fetchable by last4); this is a generated face with the real logo on it.</div>
+
+<div class="row">
+  <div class="col">
+    <h2>AXIS ••6978</h2>
+    <div class="card axis">
+      <div class="top">
+        <div class="bank"><img src="https://logo.clearbit.com/axisbank.com" alt="AXIS" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="fallback" style="display:none">AXIS BANK</span></div>
+        <div class="ctl">📶</div>
+      </div>
+      <div class="mid"><div class="chip"></div><div class="wave">))) </div></div>
+      <div class="num">•••• •••• •••• 6978</div>
+      <div class="bottom">
+        <div><div class="lbl">Card holder</div><div class="val">Harsh Khandelwal</div></div>
+        <div><div class="lbl">Valid thru</div><div class="val">08/29</div></div>
+        <div class="net"><span class="visa">VISA</span></div>
+      </div>
+    </div>
+    <div class="util">22% used · ₹3,389 due<div class="bar"><i style="width:22%"></i></div></div>
+  </div>
+
+  <div class="col">
+    <h2>AXIS ••9966</h2>
+    <div class="card axis">
+      <div class="top">
+        <div class="bank"><img src="https://logo.clearbit.com/axisbank.com" alt="AXIS" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="fallback" style="display:none">AXIS BANK</span></div>
+        <div class="ctl">📶</div>
+      </div>
+      <div class="mid"><div class="chip"></div><div class="wave">))) </div></div>
+      <div class="num">•••• •••• •••• 9966</div>
+      <div class="bottom">
+        <div><div class="lbl">Card holder</div><div class="val">Harsh Khandelwal</div></div>
+        <div><div class="lbl">Valid thru</div><div class="val">11/27</div></div>
+        <div class="net"><span class="mc"><i class="r"></i><i class="y"></i></span></div>
+      </div>
+    </div>
+    <div class="util">21% used · no dues<div class="bar"><i style="width:21%"></i></div></div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col">
+    <h2>IDFC ••2198</h2>
+    <div class="card idfc">
+      <div class="top">
+        <div class="bank"><img src="https://logo.clearbit.com/idfcfirstbank.com" alt="IDFC FIRST" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="fallback" style="display:none">IDFC FIRST</span></div>
+        <div class="ctl">📶</div>
+      </div>
+      <div class="mid"><div class="chip"></div><div class="wave">))) </div></div>
+      <div class="num">•••• •••• •••• 2198</div>
+      <div class="bottom">
+        <div><div class="lbl">Card holder</div><div class="val">Harsh Khandelwal</div></div>
+        <div><div class="lbl">Valid thru</div><div class="val">03/30</div></div>
+        <div class="net"><span class="rupay">Ru<b>Pay</b></span></div>
+      </div>
+    </div>
+    <div class="util">17% used · ₹17,630<div class="bar"><i style="width:17%"></i></div></div>
+  </div>
+
+  <div class="col">
+    <h2>IDFC ••0684</h2>
+    <div class="card idfc">
+      <div class="top">
+        <div class="bank"><img src="https://logo.clearbit.com/idfcfirstbank.com" alt="IDFC FIRST" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="fallback" style="display:none">IDFC FIRST</span></div>
+        <div class="ctl">📶</div>
+      </div>
+      <div class="mid"><div class="chip"></div><div class="wave">))) </div></div>
+      <div class="num">•••• •••• •••• 0684</div>
+      <div class="bottom">
+        <div><div class="lbl">Card holder</div><div class="val">Harsh Khandelwal</div></div>
+        <div><div class="lbl">Valid thru</div><div class="val">—</div></div>
+        <div class="net"><span class="visa">VISA</span></div>
+      </div>
+    </div>
+    <div class="util" style="color:#2DD4BF">Set limit to track utilization ›</div>
+  </div>
+</div>
+
+<ul class="tips">
+  <li><b>What's fetched from the internet:</b> the <b>bank logo</b> only (Clearbit logo API → <code>logo.clearbit.com/axisbank.com</code>, <code>idfcfirstbank.com</code>). Mapped from the SMS bank name. Cached after first load; falls back to the bank name if offline.</li>
+  <li><b>Network mark</b> (VISA / Mastercard / RuPay): bundled vector assets, picked from BIN/SMS if known, else a neutral chip-only face.</li>
+  <li><b>Everything else is generated</b> with brand-accurate gradients + EMV chip + contactless + embossed <code>•••• last4</code> + holder name + valid-thru (from statement if available, else hidden).</li>
+  <li><b>No real card photo</b> — not reliably fetchable by last4 and copyrighted. This generated face is the realistic, safe alternative.</li>
+  <li>In Bills, the utilization bar + due/"Set limit" sit just under each card (shown).</li>
+</ul>
+</body>
+</html>

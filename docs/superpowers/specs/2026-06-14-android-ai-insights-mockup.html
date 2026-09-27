@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Insights — dummy screens</title>
+<style>
+  :root{
+    --bg:#0b0d12; --panel:#13161d; --card:#171b24; --card2:#1c212c;
+    --line:#262b36; --text:#eef1f6; --muted:#9aa3b2; --dim:#6b7280;
+    --accent:#7c5cff; --accent2:#b69bff; --green:#37d9a0; --amber:#f5b94d; --blue:#4cc4ff;
+    --shimmer1:#1b2029; --shimmer2:#242b38;
+  }
+  *{box-sizing:border-box;-webkit-font-smoothing:antialiased}
+  body{margin:0;background:radial-gradient(1200px 600px at 50% -10%,#161a24,#0b0d12 60%);
+       color:var(--text);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',sans-serif;
+       padding:34px 18px 60px}
+  h1.title{font-weight:700;font-size:22px;letter-spacing:.2px;text-align:center;margin:0 0 4px}
+  p.sub{color:var(--muted);text-align:center;margin:0 0 28px;font-size:13px}
+  .row{display:flex;gap:26px;justify-content:center;flex-wrap:wrap;align-items:flex-start}
+  .phone{width:300px;background:var(--bg);border:1px solid #20242e;border-radius:30px;
+         padding:12px 12px 16px;box-shadow:0 24px 60px rgba(0,0,0,.55);position:relative}
+  .notch{width:120px;height:22px;background:#05070b;border-radius:0 0 14px 14px;margin:0 auto 8px}
+  .label{position:absolute;top:-26px;left:0;right:0;text-align:center;color:var(--accent2);
+         font-size:12px;font-weight:600;letter-spacing:.6px;text-transform:uppercase}
+  .screen{height:600px;overflow:hidden;border-radius:20px;background:linear-gradient(180deg,#0e1117,#0b0d12);
+          padding:14px 14px 0}
+  .topbar{display:flex;align-items:center;gap:10px;margin-bottom:14px}
+  .back{color:var(--muted);font-size:18px}
+  .htitle{font-weight:700;font-size:17px;display:flex;align-items:center;gap:7px}
+  .spark{filter:drop-shadow(0 0 6px rgba(124,92,255,.6))}
+  .stepper{display:flex;align-items:center;justify-content:space-between;background:var(--panel);
+           border:1px solid var(--line);border-radius:14px;padding:9px 14px;margin-bottom:14px}
+  .stepper .m{font-weight:650;font-size:15px}
+  .arrow{width:30px;height:30px;border-radius:9px;display:grid;place-items:center;background:#1d2230;
+         color:var(--text);font-size:15px;border:1px solid var(--line)}
+  .arrow.off{color:#3b4150;background:#141821;border-color:#1b2029}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:13px 14px;margin-bottom:12px;
+        position:relative;overflow:hidden}
+  .card::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;border-radius:3px}
+  .card.sp::before{background:var(--blue)} .card.sv::before{background:var(--green)} .card.mr::before{background:var(--amber)}
+  .chead{display:flex;align-items:center;gap:8px;margin-bottom:7px}
+  .ico{width:24px;height:24px;border-radius:8px;display:grid;place-items:center;font-size:13px}
+  .sp .ico{background:rgba(76,196,255,.14)} .sv .ico{background:rgba(55,217,160,.14)} .mr .ico{background:rgba(245,185,77,.14)}
+  .ctitle{font-weight:650;font-size:13.5px}
+  .ctitle small{display:block;color:var(--dim);font-weight:500;font-size:10.5px;margin-top:1px;text-transform:uppercase;letter-spacing:.5px}
+  .body{color:#cfd6e2;font-size:12.6px;line-height:1.5}
+  .body b{color:#fff;font-weight:650}
+  .footer{display:flex;align-items:center;gap:6px;color:var(--dim);font-size:10.5px;margin-top:6px;justify-content:center}
+  .pill{display:inline-flex;align-items:center;gap:5px;background:#141821;border:1px solid var(--line);
+        color:var(--muted);border-radius:20px;padding:3px 9px;font-size:10px}
+  /* shimmer */
+  .sk{height:11px;border-radius:6px;margin:7px 0;background:linear-gradient(90deg,var(--shimmer1) 25%,var(--shimmer2) 37%,var(--shimmer1) 63%);
+      background-size:400% 100%;animation:sh 1.3s ease infinite}
+  @keyframes sh{0%{background-position:100% 0}100%{background-position:-100% 0}}
+  .w90{width:90%}.w70{width:70%}.w80{width:80%}.w55{width:55%}.w40{width:40%}
+  /* disabled */
+  .empty{display:grid;place-items:center;text-align:center;height:420px;color:var(--muted)}
+  .empty .big{font-size:34px;opacity:.5;margin-bottom:12px}
+  .empty h3{margin:0 0 6px;color:var(--text);font-size:15px;font-weight:650}
+  .empty p{margin:0;font-size:12.5px;max-width:210px;line-height:1.5}
+  /* hub entry */
+  .entry{background:linear-gradient(135deg,#211a3d,#15131f);border:1px solid #34295e;border-radius:16px;
+         padding:14px;display:flex;align-items:center;gap:12px;margin-bottom:14px;box-shadow:0 8px 24px rgba(124,92,255,.18)}
+  .entry .eico{width:40px;height:40px;border-radius:12px;background:rgba(124,92,255,.18);display:grid;place-items:center;font-size:19px}
+  .entry .etxt{flex:1}
+  .entry .etxt b{font-size:14px}
+  .entry .etxt small{display:block;color:var(--muted);font-size:11.5px;margin-top:2px}
+  .entry .chev{color:var(--accent2);font-size:18px}
+  .ghost{background:var(--card2);border:1px solid var(--line);border-radius:14px;height:64px;margin-bottom:10px;opacity:.5}
+  .hubh{font-weight:700;font-size:19px;margin:2px 0 14px}
+</style>
+</head>
+<body>
+  <h1 class="title">AI Insights — dummy screens</h1>
+  <p class="sub">Real June 2026 data · all numbers come pre-formatted from the backend (the model only echoes them)</p>
+
+  <div class="row">
+
+    <!-- LOADED -->
+    <div class="phone">
+      <span class="label">Loaded</span>
+      <div class="notch"></div>
+      <div class="screen">
+        <div class="topbar"><span class="back">‹</span><div class="htitle"><span class="spark">✨</span> AI Insights</div></div>
+        <div class="stepper"><div class="arrow">‹</div><div class="m">June 2026</div><div class="arrow off">›</div></div>
+
+        <div class="card sp">
+          <div class="chead"><div class="ico">📊</div><div class="ctitle">Spending Patterns<small>this month</small></div></div>
+          <div class="body">In June you spent <b>₹1,14,946</b> across <b>66</b> transactions. Spending skewed to <b>subscriptions (41%)</b>, then uncategorized (37%). Weekdays ran far higher than weekends. Top merchant: <b>ANTHROPIC</b> — ₹47,188 across 18 charges.</div>
+        </div>
+
+        <div class="card sv">
+          <div class="chead"><div class="ico">💸</div><div class="ctitle">How To Save More<small>actionable</small></div></div>
+          <div class="body">Trimming subscriptions by <b>10%</b> would save about <b>₹4,719</b>. Batching Blinkit's <b>11</b> small orders into fewer trips could save <b>~₹875</b>.</div>
+        </div>
+
+        <div class="card mr">
+          <div class="chead"><div class="ico">📡</div><div class="ctitle">Money Radar<small>notable</small></div></div>
+          <div class="body"><b>₹2,39,702</b> moved through repayments, transfers &amp; investments — <b>not spending</b>. Biggest single buy: <b>₹12,368</b> at STAR HEALTH.</div>
+        </div>
+
+        <div class="footer"><span class="pill">ⓘ Generated Jun 14, 1:12 AM · on-device</span></div>
+      </div>
+    </div>
+
+    <!-- LOADING -->
+    <div class="phone">
+      <span class="label">Generating (~3–5s)</span>
+      <div class="notch"></div>
+      <div class="screen">
+        <div class="topbar"><span class="back">‹</span><div class="htitle"><span class="spark">✨</span> AI Insights</div></div>
+        <div class="stepper"><div class="arrow">‹</div><div class="m">June 2026</div><div class="arrow off">›</div></div>
+
+        <div class="card sp">
+          <div class="chead"><div class="ico">📊</div><div class="ctitle">Spending Patterns<small>this month</small></div></div>
+          <div class="sk w90"></div><div class="sk w80"></div><div class="sk w55"></div>
+        </div>
+        <div class="card sv">
+          <div class="chead"><div class="ico">💸</div><div class="ctitle">How To Save More<small>actionable</small></div></div>
+          <div class="sk w70"></div><div class="sk w90"></div>
+        </div>
+        <div class="card mr">
+          <div class="chead"><div class="ico">📡</div><div class="ctitle">Money Radar<small>notable</small></div></div>
+          <div class="sk w80"></div><div class="sk w40"></div>
+        </div>
+        <div class="footer"><span class="pill">✨ writing your monthly summary…</span></div>
+      </div>
+    </div>
+
+    <!-- DISABLED -->
+    <div class="phone">
+      <span class="label">Off / unavailable</span>
+      <div class="notch"></div>
+      <div class="screen">
+        <div class="topbar"><span class="back">‹</span><div class="htitle"><span class="spark">✨</span> AI Insights</div></div>
+        <div class="stepper"><div class="arrow">‹</div><div class="m">June 2026</div><div class="arrow off">›</div></div>
+        <div class="empty">
+          <div>
+            <div class="big">✨</div>
+            <h3>AI insights aren't turned on</h3>
+            <p>Your monthly Spending, Save-More and Money-Radar summaries will appear here once enabled.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- HUB ENTRY -->
+    <div class="phone">
+      <span class="label">Entry point (Insights hub)</span>
+      <div class="notch"></div>
+      <div class="screen">
+        <div class="topbar"><div class="htitle">Insights</div></div>
+        <div class="hubh"></div>
+        <div class="entry">
+          <div class="eico">✨</div>
+          <div class="etxt"><b>AI Insights</b><small>Your June summary, in plain English</small></div>
+          <div class="chev">›</div>
+        </div>
+        <div style="color:var(--dim);font-size:11px;margin:4px 2px 10px;text-transform:uppercase;letter-spacing:.6px">Your cards</div>
+        <div class="ghost"></div><div class="ghost"></div><div class="ghost"></div><div class="ghost"></div>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>

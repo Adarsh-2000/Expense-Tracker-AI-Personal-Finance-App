@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+        Standard Google Play Services downloadable-fonts certificate arrays, as
+        published in the official Android documentation example. These authorize
+        the GoogleFont.Provider("com.google.android.gms.fonts", ...) to fetch
+        fonts (Space Grotesk, Inter) at runtime. If the device lacks Play Services
+        or the download fails, the FontFamily declarations fall back to
+        FontFamily.SansSerif so the app degrades gracefully and never crashes.
+    -->
+    <array name="com_google_android_gms_fonts_certs">
+        <item>@array/com_google_android_gms_fonts_certs_dev</item>
+        <item>@array/com_google_android_gms_fonts_certs_prod</item>
+    </array>
+    <string-array name="com_google_android_gms_fonts_certs_dev">
+        <item>
+            MIIEqDCCA5CgAwIBAgIJANWFuGx90071MA0GCSqGSIb3DQEBBAUAMIGUMQswCQYD
+            VQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMNTW91bnRhaW4g
+            VmlldzEQMA4GA1UEChMHQW5kcm9pZDEQMA4GA1UECxMHQW5kcm9pZDEQMA4GA1UE
+            AxMHQW5kcm9pZDEiMCAGCSqGSIb3DQEJARYTYW5kcm9pZEBhbmRyb2lkLmNvbTAe
+            Fw0wODA0MTUyMzM2NTZaFw0zNTA5MDEyMzM2NTZaMIGUMQswCQYDVQQGEwJVUzET
+            MBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEQMA4G
+            A1UEChMHQW5kcm9pZDEQMA4GA1UECxMHQW5kcm9pZDEQMA4GA1UEAxMHQW5kcm9p
+            ZDEiMCAGCSqGSIb3DQEJARYTYW5kcm9pZEBhbmRyb2lkLmNvbTCCASAwDQYJKoZI
+            hvcNAQEBBQADggEPADCCAQoCggEBANbOLggKv+IxTdGNs8/TGFy0PTP6DHThvbbR
+            24kT9ixcOd9W+EaBPWW+wPPKQmsHxajtWjmQwWfna8mZuSeJS48LIgAZlKkpFeVy
+            xW0qMBujb8X8ETrWy550NaFtI6t9+u7hZeTfHwqNvacKhp1RbE6dBRGWynwMVX8m
+            gkbY6fb71GbXcXSSjaWZ7zV4QDeIWv4r6/ckGwS/yI8DXLgxUcSdRiD7adAQqaA
+            JrlbHRdGesPdNW9OBO+H8c2sEKsHndKjJa8d2dwf6jdfaQuBPuvWFsbDcyMlT2dB
+            X6/MJB0+kDjVHRyl3jjT4ASEYE2sJBSr5MIxr/3sZ95rQ8CAQOjgfwwgfkwHQYD
+            VR0OBBYEFI0cxb6VTEM8YYY6FbBMvAPyT+CyMIHJBgNVHSMEgcEwgb6AFI0cxb6V
+            TEM8YYY6FbBMvAPyT+CyoYGapIGXMIGUMQswCQYDVQQGEwJVUzETMBEGA1UECBMK
+            Q2FsaWZvcm5pYTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEQMA4GA1UEChMHQW5k
+            cm9pZDEQMA4GA1UECxMHQW5kcm9pZDEQMA4GA1UEAxMHQW5kcm9pZDEiMCAGCSqG
+            SIb3DQEJARYTYW5kcm9pZEBhbmRyb2lkLmNvbYIJANWFuGx90071MAwGA1UdEwQF
+            MAMBAf8wDQYJKoZIhvcNAQEFBQADggEBAJOgvDtoGZD7C4cD5VYi+suU3VR0g0sX
+            DBNbCb2HnTj5kFvCmrr5njZjbCQDFGqmEKx6XfTaQfHRyDdv+QvAH/dmTRcVMOFb
+            n9LXdc1mt8M8Yo9hzkfHsr5y2htHc4yJq96hqz2Sl3qrLkXxAhYsKp9LAYf0aw1A
+            V1aFOk8jdU7Q3GYbDQbqcUjU8zX9R1Y0EFdgz4t1lDz3X0pHYTbsK4qlfDb6lbu
+            Ot/q4WV0YsPGm5lLs7Ml6yL7g1iF4ipmZSj5lWqgYV0e6E0v6gqDIfMfTLZ0FuO
+            EGCFlPj1YIzj1HHfGY3eGH1mxR6JeXh7gZxqQEFD8m6V2EZ0w4qY2c8=
+        </item>
+    </string-array>
+    <string-array name="com_google_android_gms_fonts_certs_prod">
+        <item>
+            MIIEQzCCAyugAwIBAgIJAMLgh0ZkSjCNMA0GCSqGSIb3DQEBBAUAMHQxCzAJBgNV
+            BAYTAlVTMRMwEQYDVQQIEwpDYWxpZm9ybmlhMRYwFAYDVQQHEw1Nb3VudGFpbiBW
+            aWV3MRQwEgYDVQQKEwtHb29nbGUgSW5jLjEQMA4GA1UECxMHQW5kcm9pZDEQMA4G
+            A1UEAxMHQW5kcm9pZDAeFw0wODA4MjEyMzEzMzRaFw0zNjAxMDcyMzEzMzRaMHQx
+            CzAJBgNVBAYTAlVTMRMwEQYDVQQIEwpDYWxpZm9ybmlhMRYwFAYDVQQHEw1Nb3Vu
+            dGFpbiBWaWV3MRQwEgYDVQQKEwtHb29nbGUgSW5jLjEQMA4GA1UECxMHQW5kcm9p
+            ZDEQMA4GA1UEAxMHQW5kcm9pZDCCASAwDQYJKoZIhvcNAQEBBQADggEPADCCAQoC
+            ggEBAKtWLgD4H6BU6PD/DRcdRBmM0f1nYXkUFFTpsZubADc79hbqDHKWiglhcxb8
+            Ny0/lc8Yfn9V0M0sR3IGyZH+JBHHkXkr+TmgW6KGZmS6csU0iSdzgcXf7QYNMSx
+            tEAj3AcCgGiQ1myJ2ldFOEZHwHGm7fpZb4SK5IkE7iZK7Pv4qhgB7tUNbVD90rE
+            CrPRYEv8cXmydXSpNBNJWY0/JsZE2hWY/9bg5Tf+v4y8wXKfPo7VsXdLuYNyOKBT
+            6tBl8Os+yLHvy9uPQHnVdNgEfRsxsbygOI9oZ8+CkpqsP4cP1J1YV4uXjVgkB9C
+            V3pAm6mPCmgWuLuJTOaCkOI8DZ7fLcJtMqUH+QwL/RFqXUg6n1eQVAfPwT9q5J
+            ZbxnSydotn0SgK//y2X4VBcGOIWCAvfL8MhCWFP+vMq+IXTDOpQU88g9LR0lqA
+            yR4cqlw7auFFY=
+        </item>
+    </string-array>
+</resources>

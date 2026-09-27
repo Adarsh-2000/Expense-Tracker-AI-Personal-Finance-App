@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ledger Noir · Flip 7 Mockups</title>
+<style>
+  :root{
+    --bg:#070709; --panel:#0e0e12; --card:#16161d; --card2:#1c1c25;
+    --teal:#2DD4BF; --emerald:#34D399; --rose:#F87171; --amber:#FBBF24;
+    --txt:#F4F4F6; --txt2:#A1A1AA; --muted:#6b7280; --line:#26262e;
+    --axis:#AE275F; --idfc:#9C1D26;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;}
+  body{background:#000;color:var(--txt);padding:40px 20px 80px;}
+  h1{font-size:30px;font-weight:800;letter-spacing:-.5px;margin-bottom:4px;background:linear-gradient(90deg,var(--teal),var(--emerald));-webkit-background-clip:text;-webkit-text-fill-color:transparent;}
+  .lede{color:var(--txt2);margin-bottom:36px;font-size:14px;}
+  .screen{margin-bottom:60px;border-top:1px solid var(--line);padding-top:34px;}
+  .screen h2{font-size:21px;font-weight:700;margin-bottom:4px;}
+  .screen .desc{color:var(--txt2);font-size:13px;margin-bottom:20px;max-width:760px;}
+  .frames{display:flex;gap:36px;align-items:flex-start;flex-wrap:wrap;}
+  .frameWrap{display:flex;flex-direction:column;align-items:center;gap:10px;}
+  .ftag{font-size:11px;color:var(--muted);letter-spacing:1.5px;text-transform:uppercase;}
+  /* device frames */
+  .phone{background:var(--bg);border:9px solid #1b1b22;border-radius:38px;position:relative;overflow:hidden;box-shadow:0 18px 50px rgba(0,0,0,.6);}
+  .main{width:300px;height:660px;}
+  .cover{width:300px;height:330px;}
+  .cam{position:absolute;top:11px;left:50%;transform:translateX(-50%);width:9px;height:9px;border-radius:50%;background:#000;border:2px solid #2a2a32;z-index:5;}
+  .scr{position:absolute;inset:0;padding:26px 16px 0;overflow:hidden;}
+  .sb{display:flex;justify-content:space-between;font-size:10px;color:var(--txt2);margin-bottom:10px;}
+  .sb .ic{letter-spacing:1px;}
+  /* building blocks */
+  .label{font-size:9.5px;letter-spacing:1.6px;text-transform:uppercase;color:var(--txt2);margin-bottom:6px;}
+  .hero{font-size:34px;font-weight:800;letter-spacing:-1px;line-height:1;}
+  .hero.sm{font-size:26px;}
+  .sub{font-size:11px;color:var(--txt2);margin-top:5px;}
+  .up{color:var(--emerald);} .down{color:var(--rose);}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:13px;margin-top:11px;}
+  .card.tight{padding:10px 12px;}
+  .row{display:flex;justify-content:space-between;align-items:center;}
+  .h2t{font-size:13px;font-weight:600;}
+  .t-sec{font-size:9px;letter-spacing:1.4px;text-transform:uppercase;color:var(--txt2);margin:14px 0 2px;}
+  .chip{display:inline-block;font-size:10px;padding:5px 11px;border-radius:20px;background:var(--card2);color:var(--txt2);margin-right:6px;}
+  .chip.on{background:var(--teal);color:#04201c;font-weight:700;}
+  .pill{font-size:10px;padding:7px 0;border-radius:12px;background:var(--card2);color:var(--txt);text-align:center;flex:1;font-weight:600;}
+  .pill.p{background:rgba(45,212,191,.16);color:var(--teal);}
+  .nav{position:absolute;bottom:0;left:0;right:0;height:50px;background:rgba(10,10,14,.96);border-top:1px solid var(--line);display:flex;justify-content:space-around;align-items:center;font-size:9px;color:var(--muted);}
+  .nav .n{display:flex;flex-direction:column;align-items:center;gap:3px;}
+  .nav .n .d{width:5px;height:5px;border-radius:50%;background:#33333d;}
+  .nav .n.on{color:var(--teal);} .nav .n.on .d{background:var(--teal);}
+  .bar{height:6px;border-radius:3px;background:var(--card2);overflow:hidden;margin-top:7px;}
+  .bar > i{display:block;height:100%;border-radius:3px;}
+  .dot{width:8px;height:8px;border-radius:2px;display:inline-block;margin-right:6px;vertical-align:middle;}
+  .donut{width:74px;height:74px;border-radius:50%;background:conic-gradient(var(--teal) 0 38%,var(--amber) 38% 60%,var(--rose) 60% 78%,#5b8def 78% 100%);position:relative;}
+  .donut::after{content:"";position:absolute;inset:13px;border-radius:50%;background:var(--card);}
+  .donut.sm{width:58px;height:58px;}.donut.sm::after{inset:10px;}
+  .amt{font-size:12px;font-weight:700;}
+  .amt.d{color:var(--rose);}.amt.c{color:var(--emerald);}
+  .tx{display:flex;justify-content:space-between;align-items:center;padding:7px 0;border-bottom:1px solid rgba(38,38,46,.5);}
+  .av{width:24px;height:24px;border-radius:8px;background:var(--card2);display:inline-flex;align-items:center;justify-content:center;font-size:11px;margin-right:8px;}
+  .fab{position:absolute;bottom:60px;right:16px;width:42px;height:42px;border-radius:50%;background:var(--teal);color:#04201c;display:flex;align-items:center;justify-content:center;font-size:22px;font-weight:600;box-shadow:0 6px 16px rgba(45,212,191,.4);}
+  .tile{flex:1;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:11px;}
+  .tile .ti{font-size:18px;}.tile .tt{font-size:11px;font-weight:600;margin-top:6px;}.tile .ts{font-size:8.5px;color:var(--muted);margin-top:2px;}
+  .badge{font-size:8px;background:var(--amber);color:#3a2c00;border-radius:8px;padding:2px 5px;font-weight:700;}
+  .alert{background:rgba(251,191,36,.14);border-radius:10px;padding:8px 11px;font-size:10px;color:var(--amber);margin-top:10px;font-weight:600;}
+  .g{display:flex;gap:8px;}
+  .center{display:flex;flex-direction:column;align-items:center;justify-content:center;height:100%;text-align:center;gap:14px;}
+  .gbtn{background:#F3F4F6;color:#1F2937;border-radius:14px;padding:13px 0;width:200px;text-align:center;font-weight:600;font-size:13px;}
+  .word{font-size:38px;font-weight:800;line-height:1;background:linear-gradient(90deg,var(--teal),var(--emerald));-webkit-background-clip:text;-webkit-text-fill-color:transparent;}
+  .tips{margin-top:18px;max-width:760px;}
+  .tips li{font-size:12.5px;color:var(--txt2);margin:6px 0 6px 18px;}
+  .tips b{color:var(--txt);}
+  .note{background:#0e0e12;border:1px solid var(--line);border-radius:12px;padding:14px 16px;color:var(--txt2);font-size:12.5px;margin-bottom:30px;}
+</style>
+</head>
+<body>
+<h1>Ledger Noir — Galaxy Z Flip 7 Mockups</h1>
+<p class="lede">Dummy UI for each screen · Main 6.9″ (tall 21:9) ║ Cover 4.1″ (near-square) · CRED-style reference · numbers are placeholder.</p>
+<div class="note">These are static mockups to align on direction — not the real app. Scroll through; tell me in the terminal which screens/ideas you like, what to change, and I'll refine before we write the spec.</div>
+
+<!-- ===================== DASHBOARD ===================== -->
+<div class="screen">
+  <h2>1 · Dashboard (Home)</h2>
+  <div class="desc">One hero (Net Worth), quick-action pills, insight cards. Cover = glance feed of the most urgent items.</div>
+  <div class="frames">
+    <div class="frameWrap"><div class="ftag">Main 6.9″</div>
+      <div class="phone main"><div class="cam"></div><div class="scr">
+        <div class="sb"><span>11:40</span><span class="ic">▮▮ 📶 🔋</span></div>
+        <div class="row"><span class="h2t">Hi Harsh 👋</span><span style="color:var(--txt2)">⚙ &nbsp; 🔔³</span></div>
+        <div style="margin-top:16px" class="label">Net worth</div>
+        <div class="hero">₹18,42,300</div>
+        <div class="sub"><span class="up">▲ 2.1%</span> · as of today</div>
+        <div class="g" style="margin-top:14px"><div class="pill p">Spend</div><div class="pill">Bills</div><div class="pill">Radar</div></div>
+        <div class="card"><div class="row"><span class="h2t">Where it went</span><span style="color:var(--txt2);font-size:10px">June ▾</span></div>
+          <div class="g" style="margin-top:10px;align-items:center"><div class="donut"></div>
+            <div style="font-size:10px;color:var(--txt2);line-height:1.9"><div><span class="dot" style="background:var(--teal)"></span>Food 38%</div><div><span class="dot" style="background:var(--amber)"></span>Shopping 22%</div><div><span class="dot" style="background:var(--rose)"></span>Bills 18%</div><div><span class="dot" style="background:#5b8def"></span>Other 22%</div></div></div></div>
+        <div class="card tight"><div class="label" style="margin-bottom:8px">Last 3 months</div>
+          <div class="g" style="align-items:flex-end;height:40px"><i style="flex:1;background:var(--teal);height:60%;border-radius:3px"></i><i style="flex:1;background:var(--teal);height:85%;border-radius:3px"></i><i style="flex:1;background:var(--emerald);height:100%;border-radius:3px"></i></div></div>
+        <div class="nav"><div class="n on"><div class="d"></div>Home</div><div class="n"><div class="d"></div>Txns</div><div class="n"><div class="d"></div>Insights</div><div class="n"><div class="d"></div>Invest</div><div class="n"><div class="d"></div>Bills</div></div>
+      </div></div>
+    </div>
+    <div class="frameWrap"><div class="ftag">Cover 4.1″</div>
+      <div class="phone cover"><div class="cam"></div><div class="scr">
+        <div class="sb"><span>11:40</span><span class="ic">📶 🔋</span></div>
+        <div class="label">Spent · June</div>
+        <div class="hero sm">₹1,24,500</div>
+        <div class="card tight"><div class="row"><span style="font-size:11px">📄 2 bills due</span><span class="amt d">₹3,389</span></div></div>
+        <div class="alert">⚠ Money Radar · 1 new alert</div>
+        <div class="nav"><div class="n on"><div class="d"></div>Home</div><div class="n"><div class="d"></div>Txns</div><div class="n"><div class="d"></div>Bills</div><div class="n"><div class="d"></div>•••</div></div>
+      </div></div>
+    </div>
+  </div>
+  <ul class="tips"><li>① <b>One hero metric</b> dominates; freshness is a quiet sub-line.</li><li>② <b>Quick-action pills</b> (Spend/Bills/Radar) under the hero.</li><li>③ <b>Sync setup moved</b> out of daily home into Settings.</li><li>④ <b>Cover = glance feed</b>: spend hero + only the urgent rows.</li><li>⑤ <b>Bell with count</b> instead of a Notifications card.</li></ul>
+</div>
+
+<!-- ===================== TRANSACTIONS ===================== -->
+<div class="screen">
+  <h2>2 · Transactions</h2>
+  <div class="desc">Sticky date headers with daily net, one segmented filter, merchant glyphs, FAB to add.</div>
+  <div class="frames">
+    <div class="frameWrap"><div class="ftag">Main 6.9″</div>
+      <div class="phone main"><div class="cam"></div><div class="scr">
+        <div class="sb"><span>11:40</span><span class="ic">▮▮ 📶 🔋</span></div>
+        <div class="h2t" style="font-size:16px">Transactions</div>
+        <div style="margin-top:12px"><span class="chip on">All</span><span class="chip">Spend</span><span class="chip">Income</span></div>
+        <div class="card tight" style="margin-top:12px;color:var(--txt2);font-size:11px">🔍 Search merchants…</div>
+        <div class="row t-sec"><span>Today</span><span class="amt d">−₹2,340</span></div>
+        <div class="tx"><span><span class="av">🛵</span>Swiggy</span><span class="amt d">−₹340</span></div>
+        <div class="tx"><span><span class="av">🚕</span>Uber</span><span class="amt d">−₹180</span></div>
+        <div class="row t-sec"><span>Yesterday</span><span class="amt d">−₹1,299</span></div>
+        <div class="tx"><span><span class="av">📦</span>Amazon</span><span class="amt d">−₹1,299</span></div>
+        <div class="tx"><span><span class="av">💰</span>Salary</span><span class="amt c">+₹1,80,000</span></div>
+        <div class="fab">+</div>
+        <div class="nav"><div class="n"><div class="d"></div>Home</div><div class="n on"><div class="d"></div>Txns</div><div class="n"><div class="d"></div>Insights</div><div class="n"><div class="d"></div>Invest</div><div class="n"><div class="d"></div>Bills</div></div>
+      </div></div>
+    </div>
+    <div class="frameWrap"><div class="ftag">Cover 4.1″</div>
+      <div class="phone cover"><div class="cam"></div><div class="scr">
+        <div class="sb"><span>11:40</span><span class="ic">📶 🔋</span></div>
+        <div class="row"><span class="h2t">Txns</span><span style="color:var(--txt2);font-size:12px">🔍 &nbsp; +</span></div>
+        <div style="margin-top:8px"><span class="chip on">All</span><span class="chip">−</span><span class="chip">+</span></div>
+        <div class="t-sec">Today</div>
+        <div class="tx"><span><span class="av">🛵</span>Swiggy</span><span class="amt d">−340</span></div>
+        <div class="tx"><span><span class="av">🚕</span>Uber</span><span class="amt d">−180</span></div>
+        <div class="nav"><div class="n"><div class="d"></div>Home</div><div class="n on"><div class="d"></div>Txns</div><div class="n"><div class="d"></div>Bills</div><div class="n"><div class="d"></div>•••</div></div>
+      </div></div>
+    </div>
+  </div>
+  <ul class="tips"><li>① <b>Sticky date headers</b> + per-day net total.</li><li>② <b>Single segmented pill</b> (All·Spend·Income).</li><li>③ <b>Search + date range</b> collapse into one bar.</li><li>④ <b>Merchant glyphs/avatars</b> for instant recognition.</li><li>⑤ <b>FAB</b> for Add; cover uses icon-only filters.</li></ul>
+</div>
+
+<!-- ===================== INSIGHTS ===================== -->
+<div class="screen">
+  <h2>3 · Insights (hub)</h2>
+  <div class="desc">Spend hero + allocation donut, then a tile grid with live badges. Cover = single-column rows.</div>
+  <div class="frames">
+    <div class="frameWrap"><div class="ftag">Main 6.9″</div>
+      <div class="phone main"><div class="cam"></div><div class="scr">
+        <div class="sb"><span>11:40</span><span class="ic">▮▮ 📶 🔋</span></div>
+        <div class="h2t" style="font-size:16px">Insights</div>
+        <div class="card"><div class="label">Total spent · June</div><div class="hero sm">₹1,24,500</div></div>
+        <div class="g" style="margin-top:11px"><div class="tile"><div class="ti">💳</div><div class="tt">How I Pay</div><div class="ts">cards · upi · when</div></div><div class="tile"><div class="ti">💡</div><div class="tt">Save More</div><div class="ts">subs · leaks · goals</div></div></div>
+        <div class="g" style="margin-top:8px"><div class="tile"><div class="ti">🎯</div><div class="tt">Budgets</div><div class="ts">caps · alerts</div></div><div class="tile"><div class="row"><div class="ti">🎁</div><span class="badge">320 exp</span></div><div class="tt">Rewards</div><div class="ts">pts · redeem</div></div></div>
+        <div class="g" style="margin-top:8px"><div class="tile"><div class="row"><div class="ti">📡</div><span class="badge">1 alert</span></div><div class="tt">Money Radar</div><div class="ts">mandates · forex</div></div><div class="tile" style="opacity:.4"></div></div>
+        <div class="nav"><div class="n"><div class="d"></div>Home</div><div class="n"><div class="d"></div>Txns</div><div class="n on"><div class="d"></div>Insights</div><div class="n"><div class="d"></div>Invest</div><div class="n"><div class="d"></div>Bills</div></div>
+      </div></div>
+    </div>
+    <div class="frameWrap"><div class="ftag">Cover 4.1″</div>
+      <div class="phone cover"><div class="cam"></div><div class="scr">
+        <div class="sb"><span>11:40</span><span class="ic">📶 🔋</span></div>
+        <div class="label">Total spent</div><div class="hero sm">₹1,24,500</div>
+        <div class="card tight" style="margin-top:9px"><div class="row"><span style="font-size:11px">💳 How I Pay</span><span style="color:var(--txt2)">›</span></div></div>
+        <div class="card tight"><div class="row"><span style="font-size:11px">🎁 Rewards</span><span class="badge">320 exp</span></div></div>
+        <div class="nav"><div class="n"><div class="d"></div>Home</div><div class="n on"><div class="d"></div>Ins</div><div class="n"><div class="d"></div>Bills</div><div class="n"><div class="d"></div>•••</div></div>
+      </div></div>
+    </div>
+  </div>
+  <ul class="tips"><li>① <b>2-col tiles</b> (main) / 1-col rows (cover).</li><li>② <b>Spend hero + donut</b> lead the hub.</li><li>③ <b>Live badges</b> surface urgency (alerts, expiring pts).</li><li>④ <b>Locked tile height/icon</b> tokens.</li><li>⑤ <b>Order by usage.</b></li></ul>
+</div>
+
+<!-- ===================== PORTFOLIO ===================== -->
+<div class="screen">
+  <h2>4 · Portfolio (Invest)</h2>
+  <div class="desc">Portfolio value hero with colored change, allocation donut + legend, US-stocks card, sync freshness.</div>
+  <div class="frames">
+    <div class="frameWrap"><div class="ftag">Main 6.9″</div>
+      <div class="phone main"><div class="cam"></div><div class="scr">
+        <div class="sb"><span>11:40</span><span class="ic">▮▮ 📶 🔋</span></div>
+        <div class="row"><span class="h2t" style="font-size:16px">Investments</span><span class="chip">⟳ Sync</span></div>
+        <div style="margin-top:14px" class="label">Portfolio value</div>
+        <div class="hero">₹4,10,250</div><div class="sub"><span class="up">▲ 4.6% · ₹18,040</span></div>
+        <div class="card"><div class="label">Allocation</div><div class="g" style="margin-top:8px;align-items:center"><div class="donut sm"></div><div style="font-size:10px;color:var(--txt2);line-height:1.9"><div><span class="dot" style="background:var(--teal)"></span>Stocks 62%</div><div><span class="dot" style="background:var(--amber)"></span>Funds 31%</div><div><span class="dot" style="background:var(--rose)"></span>Other 7%</div></div></div></div>
+        <div class="card tight"><div class="row"><span style="font-size:11px">🇺🇸 US Stocks <span style="color:var(--muted);font-size:9px">aggregate only</span></span><span class="amt">₹88,400</span></div></div>
+        <div class="sub" style="margin-top:8px">Last synced 2h ago</div>
+        <div class="nav"><div class="n"><div class="d"></div>Home</div><div class="n"><div class="d"></div>Txns</div><div class="n"><div class="d"></div>Insights</div><div class="n on"><div class="d"></div>Invest</div><div class="n"><div class="d"></div>Bills</div></div>
+      </div></div>
+    </div>
+    <div class="frameWrap"><div class="ftag">Cover 4.1″</div>
+      <div class="phone cover"><div class="cam"></div><div class="scr">
+        <div class="sb"><span>11:40</span><span class="ic">📶 🔋</span></div>
+        <div class="row"><span class="label">Portfolio</span><span style="color:var(--txt2)">⟳</span></div>
+        <div class="hero sm">₹4,10,250</div><div class="sub"><span class="up">▲ 4.6%</span></div>
+        <div class="g" style="margin-top:10px;align-items:center"><div class="donut sm"></div><div style="font-size:10px;color:var(--txt2)">Stk 62%<br>Fnd 31%</div></div>
+        <div class="nav"><div class="n"><div class="d"></div>Home</div><div class="n on"><div class="d"></div>Inv</div><div class="n"><div class="d"></div>Bills</div><div class="n"><div class="d"></div>•••</div></div>
+      </div></div>
+    </div>
+  </div>
+  <ul class="tips"><li>① <b>Value hero</b> with day/total change colored.</li><li>② <b>Donut + inline legend</b>, tap slice to filter.</li><li>③ <b>US Stocks own card</b> with "aggregate only" note.</li><li>④ <b>Last-synced + spinner</b> states.</li><li>⑤ <b>Single-CTA empty state</b>; cover = value+ring only.</li></ul>
+</div>
+
+<!-- ===================== SAVINGS ===================== -->
+<div class="screen">
+  <h2>5 · Savings</h2>
+  <div class="desc">Total-liquid hero with split caption, account rows with bank chips, FD cards with maturity progress.</div>
+  <div class="frames">
+    <div class="frameWrap"><div class="ftag">Main 6.9″</div>
+      <div class="phone main"><div class="cam"></div><div class="scr">
+        <div class="sb"><span>11:40</span><span class="ic">▮▮ 📶 🔋</span></div>
+        <div class="h2t" style="font-size:16px">Savings</div>
+        <div style="margin-top:14px" class="label">Total liquid</div><div class="hero">₹3,62,140</div>
+        <div class="sub">₹3.6L accounts · ₹1.0L FDs</div>
+        <div class="t-sec">Savings accounts</div>
+        <div class="card tight"><div class="row"><span><span class="dot" style="background:var(--axis)"></span>AXIS ••3421</span><span class="amt">₹2,10,000</span></div></div>
+        <div class="card tight"><div class="row"><span><span class="dot" style="background:var(--idfc)"></span>IDFC ••9182</span><span class="amt">₹1,52,140</span></div></div>
+        <div class="row t-sec"><span>Fixed deposits</span><span class="chip">+ Add</span></div>
+        <div class="card tight"><div class="row"><span style="font-size:11px">HDFC FD · 7.1%</span><span class="amt">₹1,00,000</span></div><div class="bar"><i style="width:55%;background:var(--emerald)"></i></div><div class="sub">Matures Mar 2027</div></div>
+        <div class="nav"><div class="n"><div class="d"></div>Home</div><div class="n"><div class="d"></div>Txns</div><div class="n"><div class="d"></div>Insights</div><div class="n"><div class="d"></div>Invest</div><div class="n on"><div class="d"></div>Save</div></div>
+      </div></div>
+    </div>
+    <div class="frameWrap"><div class="ftag">Cover 4.1″</div>
+      <div class="phone cover"><div class="cam"></div><div class="scr">
+        <div class="sb"><span>11:40</span><span class="ic">📶 🔋</span></div>
+        <div class="label">Total liquid</div><div class="hero sm">₹3,62,140</div>
+        <div class="card tight" style="margin-top:9px"><div class="row"><span style="font-size:11px"><span class="dot" style="background:var(--axis)"></span>AXIS</span><span class="amt">₹2.1L</span></div></div>
+        <div class="card tight"><div class="row"><span style="font-size:11px"><span class="dot" style="background:var(--idfc)"></span>IDFC</span><span class="amt">₹1.5L</span></div></div>
+        <div class="nav"><div class="n"><div class="d"></div>Home</div><div class="n on"><div class="d"></div>Save</div><div class="n"><div class="d"></div>Bills</div><div class="n"><div class="d"></div>•••</div></div>
+      </div></div>
+    </div>
+  </div>
+  <ul class="tips"><li>① <b>Total-liquid hero</b> + split caption.</li><li>② <b>Account rows</b>: bank chip + last4 + balance.</li><li>③ <b>FD maturity progress bar</b> + rate badge.</li><li>④ <b>Consistent "+ Add FD"</b> styling.</li><li>⑤ <b>Friendly empty states</b>; cover collapses FDs.</li></ul>
+</div>
+
+<!-- ===================== BILLS ===================== -->
+<div class="screen">
+  <h2>6 · Bills</h2>
+  <div class="desc">Due-now hero, utilization bars (the feature we shipped) with chevron + Adjust, overdue floats to top.</div>
+  <div class="frames">
+    <div class="frameWrap"><div class="ftag">Main 6.9″</div>
+      <div class="phone main"><div class="cam"></div><div class="scr">
+        <div class="sb"><span>11:40</span><span class="ic">▮▮ 📶 🔋</span></div>
+        <div class="h2t" style="font-size:16px">Pending Bills</div>
+        <div class="card"><div class="g"><div style="flex:1"><div class="label">Due now</div><div class="hero sm down">₹3,389</div></div><div style="flex:1"><div class="label">Unbilled</div><div class="hero sm" style="color:var(--amber)">₹1,01,252</div></div></div></div>
+        <div class="t-sec">Your cards</div>
+        <div class="card tight"><div class="row"><span style="font-size:11px"><span class="dot" style="background:var(--axis)"></span>AXIS ••6978</span><span class="amt" style="color:var(--emerald)">22% ⌄</span></div><div class="bar"><i style="width:22%;background:var(--emerald)"></i></div><div class="sub" style="color:var(--teal)">Adjust limit ›</div></div>
+        <div class="card tight"><div class="row"><span style="font-size:11px"><span class="dot" style="background:var(--idfc)"></span>IDFC ••0684</span><span style="color:var(--teal);font-size:10px">Set limit ›</span></div></div>
+        <div class="card tight" style="border-color:var(--rose)"><div class="row"><span style="font-size:11px">AXIS ••6978 bill</span><span class="amt d">overdue 66d</span></div></div>
+        <div class="nav"><div class="n"><div class="d"></div>Home</div><div class="n"><div class="d"></div>Txns</div><div class="n"><div class="d"></div>Insights</div><div class="n"><div class="d"></div>Invest</div><div class="n on"><div class="d"></div>Bills</div></div>
+      </div></div>
+    </div>
+    <div class="frameWrap"><div class="ftag">Cover 4.1″</div>
+      <div class="phone cover"><div class="cam"></div><div class="scr">
+        <div class="sb"><span>11:40</span><span class="ic">📶 🔋</span></div>
+        <div class="label">Due now</div><div class="hero sm down">₹3,389</div>
+        <div class="card tight" style="margin-top:9px"><div class="row"><span style="font-size:11px">AXIS 22%</span><span style="color:var(--emerald)">▆</span></div><div class="bar"><i style="width:22%;background:var(--emerald)"></i></div></div>
+        <div class="card tight"><div class="row"><span style="font-size:11px">IDFC</span><span style="color:var(--teal);font-size:10px">Set ›</span></div></div>
+        <div class="nav"><div class="n"><div class="d"></div>Home</div><div class="n on"><div class="d"></div>Bills</div><div class="n"><div class="d"></div>Rew</div><div class="n"><div class="d"></div>•••</div></div>
+      </div></div>
+    </div>
+  </div>
+  <ul class="tips"><li>① <b>"Due now" hero</b> (the actionable number).</li><li>② <b>Utilization bar + chevron + Adjust</b> (already shipped).</li><li>③ <b>Overdue floats to top</b> in red.</li><li>④ <b>Mark-paid as swipe.</b></li><li>⑤ <b>Cover = one-line cards.</b></li></ul>
+</div>
+
+<!-- ===================== REWARDS ===================== -->
+<div class="screen">
+  <h2>7 · Rewards</h2>
+  <div class="desc">₹-value hero (not points), expiry amber chip, per-card points + value + redeem icons.</div>
+  <div class="frames">
+    <div class="frameWrap"><div class="ftag">Main 6.9″</div>
+      <div class="phone main"><div class="cam"></div><div class="scr">
+        <div class="sb"><span>11:40</span><span class="ic">▮▮ 📶 🔋</span></div>
+        <div class="h2t" style="font-size:15px">‹ Rewards</div>
+        <div style="margin-top:14px" class="label">Total redeemable</div><div class="hero">₹4,820</div>
+        <div class="alert">⚠ 320 pts expire in 12 days</div>
+        <div class="card"><div class="row"><span style="font-size:11px"><span class="dot" style="background:var(--axis)"></span>AXIS ••6978</span><span class="amt">9,640 pts</span></div><div class="sub">≈ ₹3,210 · ✈ 🍽 🛍 ⛽</div></div>
+        <div class="card"><div class="row"><span style="font-size:11px"><span class="dot" style="background:var(--idfc)"></span>IDFC ••2198</span><span class="amt">2,110 pts</span></div><div class="sub">≈ ₹1,610 · ✈ 🛍</div></div>
+        <div class="nav"><div class="n"><div class="d"></div>Home</div><div class="n"><div class="d"></div>Txns</div><div class="n on"><div class="d"></div>Insights</div><div class="n"><div class="d"></div>Invest</div><div class="n"><div class="d"></div>Bills</div></div>
+      </div></div>
+    </div>
+    <div class="frameWrap"><div class="ftag">Cover 4.1″</div>
+      <div class="phone cover"><div class="cam"></div><div class="scr">
+        <div class="sb"><span>11:40</span><span class="ic">📶 🔋</span></div>
+        <div class="label">Redeemable</div><div class="hero sm">₹4,820</div>
+        <div class="alert">⚠ 320 exp · 12d</div>
+        <div class="card tight"><div class="row"><span style="font-size:11px">AXIS</span><span class="amt">₹3,210</span></div></div>
+        <div class="nav"><div class="n"><div class="d"></div>Home</div><div class="n on"><div class="d"></div>Rew</div><div class="n"><div class="d"></div>Bills</div><div class="n"><div class="d"></div>•••</div></div>
+      </div></div>
+    </div>
+  </div>
+  <ul class="tips"><li>① <b>₹-value hero</b> (people think in money).</li><li>② <b>Expiry amber chip</b> under hero.</li><li>③ <b>Per-card pts + ₹ + redeem icons.</b></li><li>④ <b>Standardized redeem glyphs.</b></li><li>⑤ <b>Cover = hero + expiry + value rows.</b></li></ul>
+</div>
+
+<!-- ===================== SETTINGS ===================== -->
+<div class="screen">
+  <h2>8 · Settings</h2>
+  <div class="desc">Labeled sections, server URL with "test connection", account + sign-out clearly placed.</div>
+  <div class="frames">
+    <div class="frameWrap"><div class="ftag">Main 6.9″</div>
+      <div class="phone main"><div class="cam"></div><div class="scr">
+        <div class="sb"><span>11:40</span><span class="ic">▮▮ 📶 🔋</span></div>
+        <div class="h2t" style="font-size:15px">‹ Settings</div>
+        <div class="t-sec">Account</div>
+        <div class="card tight"><div class="row"><span style="font-size:11px">Harsh · signed in</span><span class="up">●</span></div></div>
+        <div class="t-sec">Server</div>
+        <div class="card tight"><div class="row"><span style="font-size:10px">http://192.168.1.5:8000</span><span class="up">●</span></div><div class="sub" style="color:var(--teal)">Test connection ›</div></div>
+        <div class="t-sec">Data sources</div>
+        <div class="card tight"><div class="row"><span style="font-size:11px">📩 Sync Gmail</span><span style="color:var(--txt2)">›</span></div></div>
+        <div class="card tight"><div class="row"><span style="font-size:11px">💬 SMS import</span><span style="color:var(--txt2)">›</span></div></div>
+        <div class="card tight" style="margin-top:16px"><span style="font-size:11px;color:var(--rose)">Sign out</span></div>
+        <div class="nav"><div class="n"><div class="d"></div>Home</div><div class="n"><div class="d"></div>Txns</div><div class="n"><div class="d"></div>Insights</div><div class="n"><div class="d"></div>Invest</div><div class="n"><div class="d"></div>Bills</div></div>
+      </div></div>
+    </div>
+    <div class="frameWrap"><div class="ftag">Cover 4.1″</div>
+      <div class="phone cover"><div class="cam"></div><div class="scr">
+        <div class="sb"><span>11:40</span><span class="ic">📶 🔋</span></div>
+        <div class="h2t" style="font-size:14px">‹ Settings</div>
+        <div class="card tight" style="margin-top:8px"><div class="row"><span style="font-size:11px">Account</span><span style="color:var(--txt2)">›</span></div></div>
+        <div class="card tight"><div class="row"><span style="font-size:11px">Server</span><span class="up">●</span></div></div>
+        <div class="card tight"><div class="row"><span style="font-size:11px">Sync Gmail</span><span style="color:var(--txt2)">›</span></div></div>
+        <div class="nav"><div class="n"><div class="d"></div>Home</div><div class="n on"><div class="d"></div>Set</div><div class="n"><div class="d"></div>•••</div></div>
+      </div></div>
+    </div>
+  </div>
+  <ul class="tips"><li>① <b>Labeled sections</b> + chevron rows.</li><li>② <b>Server URL + "test connection"</b> (catches VPN/IP issues).</li><li>③ <b>Account + sign-out</b> clearly placed.</li><li>④ <b>56dp row token</b> (icon+title+value+chevron).</li><li>⑤ <b>Danger actions in rose</b> at bottom.</li></ul>
+</div>
+
+<!-- ===================== SIGN IN ===================== -->
+<div class="screen">
+  <h2>9 · Sign-in</h2>
+  <div class="desc">Centered block, server-reachability dot before tapping, specific inline errors.</div>
+  <div class="frames">
+    <div class="frameWrap"><div class="ftag">Main 6.9″</div>
+      <div class="phone main"><div class="cam"></div><div class="scr"><div class="center">
+        <div class="word">Ledger<br>Noir</div>
+        <div class="sub">Your private money, beautifully organised.</div>
+        <div class="gbtn">G &nbsp; Continue with Google</div>
+        <div class="sub"><span class="up">●</span> server reachable</div>
+      </div></div></div>
+    </div>
+    <div class="frameWrap"><div class="ftag">Cover 4.1″</div>
+      <div class="phone cover"><div class="cam"></div><div class="scr"><div class="center">
+        <div class="word" style="font-size:26px">Ledger Noir</div>
+        <div class="gbtn" style="width:160px;font-size:11px">G &nbsp; Continue</div>
+        <div class="sub"><span class="up">●</span> server ok</div>
+      </div></div></div>
+    </div>
+  </div>
+  <ul class="tips"><li>① <b>Vertically centered block</b> (kill dead space).</li><li>② <b>Server-reachability dot</b> before tapping.</li><li>③ <b>Specific inline errors</b> + retry.</li><li>④ <b>Respect insets</b> above the gesture bar.</li><li>⑤ <b>Gradient + motion wordmark.</b></li></ul>
+</div>
+
+</body>
+</html>

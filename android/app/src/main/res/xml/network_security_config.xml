@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <!-- Personal/local-only app: the backend runs on the user's own laptop on the LAN
+         over http. Allow cleartext to any host so a changing Mac DHCP IP never blocks
+         the app, and the server URL can be changed in-app (Settings → Backend URL)
+         without a rebuild. For a real/remote deployment, serve over https and set this
+         back to false. -->
+    <base-config cleartextTrafficPermitted="true" />
+</network-security-config>

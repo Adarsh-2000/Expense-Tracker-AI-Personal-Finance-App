@@ -1,0 +1,1730 @@
+INFO:     Started server process [80045]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     127.0.0.1:55608 - "GET /auth/config HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55612 - "GET /auth/config HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57003 - "GET /auth/config HTTP/1.1" 200 OK
+INFO:     192.168.1.3:38986 - "GET /notifications HTTP/1.1" 401 Unauthorized
+INFO:     192.168.1.3:39006 - "GET /profile HTTP/1.1" 401 Unauthorized
+INFO:     192.168.1.3:38996 - "POST /push/register HTTP/1.1" 401 Unauthorized
+INFO:     192.168.1.3:39010 - "GET /auth/config HTTP/1.1" 200 OK
+INFO:     192.168.1.3:39014 - "GET /auth/nonce HTTP/1.1" 200 OK
+INFO:     192.168.1.3:43472 - "POST /auth/verify-google HTTP/1.1" 200 OK
+INFO:     192.168.1.3:43478 - "GET /profile HTTP/1.1" 200 OK
+INFO:     192.168.1.3:43490 - "GET /money-radar/summary HTTP/1.1" 200 OK
+INFO:     192.168.1.3:43492 - "GET /rewards HTTP/1.1" 200 OK
+INFO:     192.168.1.3:43480 - "GET /notifications HTTP/1.1" 200 OK
+INFO:     192.168.1.3:43506 - "GET /rewards HTTP/1.1" 200 OK
+INFO:     192.168.1.3:43542 - "GET /reports/months HTTP/1.1" 200 OK
+INFO:     192.168.1.3:43530 - "GET /reports/spent?start=2026-03-08&end=2026-06-07 HTTP/1.1" 200 OK
+INFO:     192.168.1.3:43558 - "GET /reports/spent?start=2026-03-08&end=2026-06-07 HTTP/1.1" 200 OK
+INFO:     192.168.1.3:43516 - "GET /reports/months HTTP/1.1" 200 OK
+INFO:     192.168.1.3:43566 - "GET /money-radar/summary HTTP/1.1" 200 OK
+INFO:     192.168.1.3:43554 - "GET /notifications HTTP/1.1" 200 OK
+INFO:     192.168.1.3:43586 - "GET /reports/summary?month=2026-06 HTTP/1.1" 200 OK
+INFO:     192.168.1.3:43594 - "GET /reports/summary?month=2026-06 HTTP/1.1" 200 OK
+INFO:     192.168.1.3:43578 - "GET /networth HTTP/1.1" 200 OK
+INFO:     192.168.1.3:43616 - "GET /categories HTTP/1.1" 200 OK
+INFO:     192.168.1.3:43644 - "GET /reports/spent?month=2026-06 HTTP/1.1" 200 OK
+INFO:     192.168.1.3:43602 - "GET /categories HTTP/1.1" 200 OK
+INFO:     192.168.1.3:43630 - "GET /reports/spent?month=2026-06 HTTP/1.1" 200 OK
+INFO:     192.168.1.3:43658 - "GET /networth HTTP/1.1" 200 OK
+INFO:     192.168.1.3:43672 - "GET /networth HTTP/1.1" 200 OK
+Adding missing padding.
+Ignoring padding error: Invalid padding bytes.
+INFO:     192.168.1.3:43680 - "GET /stats HTTP/1.1" 200 OK
+INFO:     192.168.1.3:43692 - "GET /stats HTTP/1.1" 200 OK
+INFO:     192.168.1.3:43574 - "POST /sync/gmail HTTP/1.1" 200 OK
+INFO:     192.168.1.3:56424 - "GET /reports/spent?month=2026-05 HTTP/1.1" 200 OK
+INFO:     192.168.1.3:56436 - "GET /reports/spent?month=2026-05 HTTP/1.1" 200 OK
+INFO:     192.168.1.3:56448 - "GET /reports/months HTTP/1.1" 200 OK
+INFO:     192.168.1.3:56454 - "GET /reports/summary?month=2026-06 HTTP/1.1" 200 OK
+INFO:     192.168.1.3:56458 - "GET /reports/spent?month=2026-06 HTTP/1.1" 200 OK
+INFO:     192.168.1.3:56464 - "GET /networth HTTP/1.1" 200 OK
+INFO:     192.168.1.3:56474 - "GET /stats HTTP/1.1" 200 OK
+INFO:     192.168.1.3:56482 - "GET /reports/spent?month=2026-05 HTTP/1.1" 200 OK
+INFO:     192.168.1.3:56498 - "GET /categories HTTP/1.1" 200 OK
+INFO:     192.168.1.3:56492 - "GET /transactions HTTP/1.1" 200 OK
+INFO:     192.168.1.3:33734 - "GET /notifications HTTP/1.1" 200 OK
+INFO:     192.168.1.3:53716 - "GET /reports/months HTTP/1.1" 200 OK
+INFO:     192.168.1.3:53722 - "GET /reports/summary?month=2026-06 HTTP/1.1" 200 OK
+INFO:     192.168.1.3:53730 - "GET /networth HTTP/1.1" 200 OK
+INFO:     192.168.1.3:53746 - "GET /reports/spent?month=2026-06 HTTP/1.1" 200 OK
+INFO:     192.168.1.3:53756 - "GET /networth HTTP/1.1" 200 OK
+INFO:     192.168.1.3:53758 - "GET /stats HTTP/1.1" 200 OK
+INFO:     192.168.1.3:53766 - "GET /reports/spent?month=2026-05 HTTP/1.1" 200 OK
+INFO:     192.168.1.3:45176 - "GET /categories HTTP/1.1" 200 OK
+INFO:     192.168.1.3:45190 - "GET /money-radar/summary HTTP/1.1" 200 OK
+INFO:     192.168.1.3:45200 - "GET /reports/breakdown?start=2026-03-08&end=2026-06-07 HTTP/1.1" 200 OK
+INFO:     192.168.1.3:33948 - "GET /reports/months HTTP/1.1" 200 OK
+INFO:     192.168.1.3:33954 - "GET /reports/summary?month=2026-06 HTTP/1.1" 200 OK
+INFO:     192.168.1.3:33966 - "GET /reports/spent?month=2026-06 HTTP/1.1" 200 OK
+INFO:     192.168.1.3:33962 - "GET /networth HTTP/1.1" 200 OK
+INFO:     192.168.1.3:33982 - "GET /networth HTTP/1.1" 200 OK
+INFO:     192.168.1.3:33998 - "GET /stats HTTP/1.1" 200 OK
+INFO:     192.168.1.3:34008 - "GET /reports/spent?month=2026-05 HTTP/1.1" 200 OK
+INFO:     192.168.1.3:40316 - "GET /profile HTTP/1.1" 200 OK
+INFO:     192.168.1.3:40302 - "POST /push/register HTTP/1.1" 200 OK
+INFO:     192.168.1.3:40324 - "GET /notifications HTTP/1.1" 200 OK
+INFO:     192.168.1.3:40328 - "GET /money-radar/summary HTTP/1.1" 200 OK
+INFO:     192.168.1.3:40354 - "GET /rewards HTTP/1.1" 200 OK
+INFO:     192.168.1.3:40364 - "GET /reports/months HTTP/1.1" 200 OK
+INFO:     192.168.1.3:40380 - "GET /reports/spent?start=2026-03-08&end=2026-06-07 HTTP/1.1" 200 OK
+INFO:     192.168.1.3:40344 - "GET /notifications HTTP/1.1" 200 OK
+INFO:     192.168.1.3:40394 - "GET /reports/summary?month=2026-06 HTTP/1.1" 200 OK
+INFO:     192.168.1.3:40400 - "GET /categories HTTP/1.1" 200 OK
+INFO:     192.168.1.3:40410 - "GET /reports/spent?month=2026-06 HTTP/1.1" 200 OK
+INFO:     192.168.1.3:40426 - "GET /networth HTTP/1.1" 200 OK
+INFO:     192.168.1.3:40428 - "GET /stats HTTP/1.1" 200 OK
+INFO:     192.168.1.3:40446 - "GET /reports/spent?month=2026-05 HTTP/1.1" 200 OK
+INFO:     192.168.1.3:40440 - "GET /networth HTTP/1.1" 200 OK
+Adding missing padding.
+Ignoring padding error: Invalid padding bytes.
+INFO:     192.168.1.3:58260 - "POST /sync/gmail HTTP/1.1" 200 OK
+INFO:     192.168.1.3:58266 - "GET /reports/months HTTP/1.1" 200 OK
+INFO:     192.168.1.3:58268 - "GET /reports/summary?month=2026-06 HTTP/1.1" 200 OK
+INFO:     192.168.1.3:58270 - "GET /reports/spent?month=2026-06 HTTP/1.1" 200 OK
+INFO:     192.168.1.3:58272 - "GET /networth HTTP/1.1" 200 OK
+INFO:     192.168.1.3:58276 - "GET /stats HTTP/1.1" 200 OK
+INFO:     192.168.1.3:58288 - "GET /reports/spent?month=2026-05 HTTP/1.1" 200 OK
+INFO:     192.168.1.3:58292 - "GET /reports/summary?month=2026-05 HTTP/1.1" 200 OK
+INFO:     192.168.1.3:58304 - "GET /reports/spent?month=2026-05 HTTP/1.1" 200 OK
+INFO:     192.168.1.3:58316 - "GET /networth HTTP/1.1" 200 OK
+INFO:     192.168.1.3:58332 - "GET /stats HTTP/1.1" 200 OK
+INFO:     192.168.1.3:58338 - "GET /reports/spent?month=2026-04 HTTP/1.1" 200 OK
+INFO:     192.168.1.3:59006 - "GET /categories HTTP/1.1" 200 OK
+INFO:     192.168.1.3:59020 - "GET /transactions/search?start=2026-03-08&end=2026-06-07&direction=debit HTTP/1.1" 200 OK
+INFO:     192.168.1.3:49472 - "GET /reports/months HTTP/1.1" 200 OK
+INFO:     192.168.1.3:49480 - "GET /reports/summary?month=2026-05 HTTP/1.1" 200 OK
+INFO:     192.168.1.3:49494 - "GET /reports/spent?month=2026-05 HTTP/1.1" 200 OK
+INFO:     192.168.1.3:49506 - "GET /networth HTTP/1.1" 200 OK
+INFO:     192.168.1.3:49518 - "GET /stats HTTP/1.1" 200 OK
+INFO:     192.168.1.3:49546 - "GET /reports/spent?month=2026-04 HTTP/1.1" 200 OK
+INFO:     192.168.1.3:49534 - "GET /networth HTTP/1.1" 200 OK
+INFO:     192.168.1.3:34888 - "GET /reports/summary?month=2026-06 HTTP/1.1" 200 OK
+INFO:     192.168.1.3:34904 - "GET /reports/spent?month=2026-06 HTTP/1.1" 200 OK
+INFO:     192.168.1.3:34920 - "GET /networth HTTP/1.1" 200 OK
+INFO:     192.168.1.3:34934 - "GET /stats HTTP/1.1" 200 OK
+INFO:     192.168.1.3:34940 - "GET /reports/spent?month=2026-05 HTTP/1.1" 200 OK
+INFO:     192.168.1.3:49182 - "GET /categories HTTP/1.1" 200 OK
+INFO:     192.168.1.3:49188 - "GET /transactions HTTP/1.1" 200 OK
+INFO:     192.168.1.3:49192 - "GET /categories HTTP/1.1" 200 OK
+INFO:     192.168.1.3:49214 - "GET /money-radar/summary HTTP/1.1" 200 OK
+INFO:     192.168.1.3:49200 - "GET /reports/breakdown?start=2026-03-08&end=2026-06-07 HTTP/1.1" 200 OK
+INFO:     192.168.1.3:54754 - "GET /savings HTTP/1.1" 200 OK
+INFO:     192.168.1.3:54770 - "GET /portfolio HTTP/1.1" 200 OK
+INFO:     192.168.1.3:54780 - "GET /bills HTTP/1.1" 200 OK
+INFO:     192.168.1.3:54784 - "GET /cards HTTP/1.1" 200 OK
+INFO:     192.168.1.3:54790 - "GET /cards/utilization HTTP/1.1" 200 OK
+INFO:     192.168.1.3:44034 - "GET /categories HTTP/1.1" 200 OK
+INFO:     192.168.1.3:44044 - "GET /transactions/search?account_id=1&start=2025-06-06&end=2026-06-07&direction=debit HTTP/1.1" 200 OK
+INFO:     192.168.1.3:60966 - "GET /money-radar HTTP/1.1" 200 OK
+INFO:     192.168.1.3:60972 - "POST /money-radar/seen HTTP/1.1" 200 OK
+INFO:     192.168.1.3:45826 - "GET /reports/months HTTP/1.1" 200 OK
+INFO:     192.168.1.3:45840 - "GET /reports/summary?month=2026-06 HTTP/1.1" 200 OK
+INFO:     192.168.1.3:45856 - "GET /reports/spent?month=2026-06 HTTP/1.1" 200 OK
+INFO:     192.168.1.3:45868 - "GET /networth HTTP/1.1" 200 OK
+INFO:     192.168.1.3:45880 - "GET /stats HTTP/1.1" 200 OK
+INFO:     192.168.1.3:45886 - "GET /reports/spent?month=2026-05 HTTP/1.1" 200 OK
+INFO:     192.168.1.3:45892 - "GET /networth HTTP/1.1" 200 OK
+INFO:     192.168.1.3:49816 - "GET /rewards HTTP/1.1" 200 OK
+INFO:     192.168.1.3:58114 - "GET /profile HTTP/1.1" 200 OK
+INFO:     192.168.1.3:58100 - "POST /push/register HTTP/1.1" 200 OK
+INFO:     192.168.1.3:58094 - "GET /notifications HTTP/1.1" 200 OK
+INFO:     192.168.1.3:58126 - "GET /notifications HTTP/1.1" 200 OK
+INFO:     192.168.1.3:58128 - "GET /money-radar/summary HTTP/1.1" 200 OK
+INFO:     192.168.1.3:58142 - "GET /reports/months HTTP/1.1" 200 OK
+INFO:     192.168.1.3:58144 - "GET /reports/spent?start=2026-03-08&end=2026-06-07 HTTP/1.1" 200 OK
+INFO:     192.168.1.3:58156 - "GET /rewards HTTP/1.1" 200 OK
+INFO:     192.168.1.3:58160 - "GET /reports/summary?month=2026-06 HTTP/1.1" 200 OK
+INFO:     192.168.1.3:58174 - "GET /categories HTTP/1.1" 200 OK
+INFO:     192.168.1.3:58172 - "GET /reports/spent?month=2026-06 HTTP/1.1" 200 OK
+INFO:     192.168.1.3:58178 - "GET /networth HTTP/1.1" 200 OK
+INFO:     192.168.1.3:58194 - "GET /networth HTTP/1.1" 200 OK
+INFO:     192.168.1.3:58208 - "GET /stats HTTP/1.1" 200 OK
+INFO:     192.168.1.3:58212 - "GET /reports/spent?month=2026-05 HTTP/1.1" 200 OK
+Adding missing padding.
+Ignoring padding error: Invalid padding bytes.
+INFO:     192.168.1.3:58206 - "POST /sync/gmail HTTP/1.1" 200 OK
+INFO:     192.168.1.3:34068 - "GET /reports/months HTTP/1.1" 200 OK
+INFO:     192.168.1.3:34090 - "GET /categories HTTP/1.1" 200 OK
+INFO:     192.168.1.3:34094 - "GET /reports/summary?month=2026-06 HTTP/1.1" 200 OK
+INFO:     192.168.1.3:34074 - "GET /transactions HTTP/1.1" 200 OK
+INFO:     192.168.1.3:34108 - "GET /reports/spent?month=2026-06 HTTP/1.1" 200 OK
+INFO:     192.168.1.3:34110 - "GET /networth HTTP/1.1" 200 OK
+INFO:     192.168.1.3:34112 - "GET /stats HTTP/1.1" 200 OK
+INFO:     192.168.1.3:34116 - "GET /reports/spent?month=2026-05 HTTP/1.1" 200 OK
+INFO:     192.168.1.3:60394 - "GET /categories HTTP/1.1" 200 OK
+INFO:     192.168.1.3:60396 - "GET /money-radar/summary HTTP/1.1" 200 OK
+INFO:     192.168.1.3:60424 - "GET /reports/breakdown?start=2026-03-08&end=2026-06-07 HTTP/1.1" 200 OK
+INFO:     192.168.1.3:60436 - "GET /portfolio HTTP/1.1" 200 OK
+INFO:     192.168.1.3:60444 - "GET /reports/months HTTP/1.1" 200 OK
+INFO:     192.168.1.3:54836 - "GET /reports/summary?month=2026-06 HTTP/1.1" 200 OK
+INFO:     192.168.1.3:54826 - "GET /networth HTTP/1.1" 200 OK
+INFO:     192.168.1.3:54848 - "GET /reports/spent?month=2026-06 HTTP/1.1" 200 OK
+INFO:     192.168.1.3:54864 - "GET /networth HTTP/1.1" 200 OK
+INFO:     192.168.1.3:54874 - "GET /stats HTTP/1.1" 200 OK
+INFO:     192.168.1.3:54878 - "GET /reports/spent?month=2026-05 HTTP/1.1" 200 OK
+Adding missing padding.
+Ignoring padding error: Invalid padding bytes.
+INFO:     192.168.1.3:54894 - "POST /sync/gmail HTTP/1.1" 200 OK
+INFO:     192.168.1.3:51642 - "GET /reports/months HTTP/1.1" 200 OK
+INFO:     192.168.1.3:51658 - "GET /reports/summary?month=2026-06 HTTP/1.1" 200 OK
+INFO:     192.168.1.3:51674 - "GET /reports/spent?month=2026-06 HTTP/1.1" 200 OK
+INFO:     192.168.1.3:51678 - "GET /networth HTTP/1.1" 200 OK
+INFO:     192.168.1.3:51688 - "GET /stats HTTP/1.1" 200 OK
+INFO:     192.168.1.3:51696 - "GET /reports/spent?month=2026-05 HTTP/1.1" 200 OK
+INFO:     192.168.1.3:51710 - "GET /reports/months HTTP/1.1" 200 OK
+INFO:     192.168.1.3:51724 - "GET /reports/summary?month=2026-06 HTTP/1.1" 200 OK
+INFO:     192.168.1.3:51740 - "GET /reports/spent?month=2026-06 HTTP/1.1" 200 OK
+INFO:     192.168.1.3:51748 - "GET /networth HTTP/1.1" 200 OK
+INFO:     192.168.1.3:51754 - "GET /stats HTTP/1.1" 200 OK
+INFO:     192.168.1.3:51768 - "GET /reports/spent?month=2026-05 HTTP/1.1" 200 OK
+INFO:     192.168.1.3:58476 - "GET /bills HTTP/1.1" 200 OK
+INFO:     192.168.1.3:58482 - "GET /cards HTTP/1.1" 200 OK
+INFO:     192.168.1.3:58496 - "GET /cards/utilization HTTP/1.1" 200 OK
+INFO:     192.168.1.3:59842 - "GET /categories HTTP/1.1" 200 OK
+INFO:     192.168.1.3:59856 - "GET /transactions/search?account_id=6&start=2025-06-06&end=2026-06-07&direction=debit HTTP/1.1" 200 OK
+INFO:     192.168.1.3:59860 - "GET /categories HTTP/1.1" 200 OK
+INFO:     192.168.1.3:59872 - "GET /transactions/search?account_id=2&start=2025-06-06&end=2026-06-07&direction=debit HTTP/1.1" 200 OK
+INFO:     192.168.1.3:58596 - "GET /savings HTTP/1.1" 200 OK
+INFO:     192.168.1.3:35320 - "GET /notifications HTTP/1.1" 200 OK
+INFO:     192.168.1.3:60426 - "GET /notifications HTTP/1.1" 200 OK
+INFO:     192.168.1.2:52264 - "POST /push/register HTTP/1.1" 200 OK
+INFO:     192.168.1.2:52254 - "GET /notifications HTTP/1.1" 200 OK
+INFO:     192.168.1.2:52280 - "GET /profile HTTP/1.1" 200 OK
+INFO:     192.168.1.2:52284 - "GET /notifications HTTP/1.1" 200 OK
+INFO:     192.168.1.2:52290 - "GET /money-radar/summary HTTP/1.1" 200 OK
+INFO:     192.168.1.2:52306 - "GET /reports/months HTTP/1.1" 200 OK
+INFO:     192.168.1.2:52312 - "GET /reports/spent?start=2026-03-09&end=2026-06-08 HTTP/1.1" 200 OK
+INFO:     192.168.1.2:52320 - "GET /rewards HTTP/1.1" 200 OK
+INFO:     192.168.1.2:52332 - "GET /categories HTTP/1.1" 200 OK
+INFO:     192.168.1.2:52346 - "GET /reports/summary?month=2026-06 HTTP/1.1" 200 OK
+INFO:     192.168.1.2:52352 - "GET /reports/spent?month=2026-06 HTTP/1.1" 200 OK
+INFO:     192.168.1.2:52390 - "GET /networth HTTP/1.1" 200 OK
+INFO:     192.168.1.2:52376 - "GET /networth HTTP/1.1" 200 OK
+Adding missing padding.
+Ignoring padding error: Invalid padding bytes.
+INFO:     192.168.1.2:52368 - "POST /sync/gmail HTTP/1.1" 200 OK
+INFO:     192.168.1.2:50668 - "GET /reports/months HTTP/1.1" 200 OK
+INFO:     192.168.1.2:50678 - "GET /reports/summary?month=2026-06 HTTP/1.1" 200 OK
+INFO:     192.168.1.2:50682 - "GET /reports/spent?month=2026-06 HTTP/1.1" 200 OK
+INFO:     192.168.1.2:50698 - "GET /networth HTTP/1.1" 200 OK
+INFO:     192.168.1.2:50708 - "GET /stats HTTP/1.1" 200 OK
+INFO:     192.168.1.2:50722 - "GET /reports/spent?month=2026-05 HTTP/1.1" 200 OK
+INFO:     192.168.1.2:33064 - "POST /ingest/sms HTTP/1.1" 202 Accepted
+INFO:     192.168.1.2:57078 - "POST /ingest/sms HTTP/1.1" 202 Accepted
+INFO:     192.168.1.2:58024 - "GET /networth HTTP/1.1" 200 OK
+INFO:     192.168.1.2:55228 - "GET /reports/breakdown?start=2026-03-09&end=2026-06-08 HTTP/1.1" 200 OK
+INFO:     192.168.1.2:55244 - "GET /savings HTTP/1.1" 200 OK
+INFO:     192.168.1.2:55252 - "GET /portfolio HTTP/1.1" 200 OK
+INFO:     192.168.1.2:55262 - "GET /bills HTTP/1.1" 200 OK
+INFO:     192.168.1.2:55274 - "GET /cards HTTP/1.1" 200 OK
+INFO:     192.168.1.2:55282 - "GET /cards/utilization HTTP/1.1" 200 OK
+INFO:     192.168.1.2:35860 - "GET /reports/months HTTP/1.1" 200 OK
+INFO:     192.168.1.2:35864 - "GET /reports/summary?month=2026-06 HTTP/1.1" 200 OK
+INFO:     192.168.1.2:35878 - "GET /reports/spent?month=2026-06 HTTP/1.1" 200 OK
+INFO:     192.168.1.2:35886 - "GET /networth HTTP/1.1" 200 OK
+INFO:     192.168.1.2:35892 - "GET /networth HTTP/1.1" 200 OK
+INFO:     192.168.1.2:35896 - "GET /stats HTTP/1.1" 200 OK
+INFO:     192.168.1.2:35904 - "GET /reports/spent?month=2026-05 HTTP/1.1" 200 OK
+Adding missing padding.
+Ignoring padding error: Invalid padding bytes.
+INFO:     192.168.1.2:47516 - "POST /sync/gmail HTTP/1.1" 200 OK
+INFO:     192.168.1.2:47848 - "GET /reports/months HTTP/1.1" 200 OK
+INFO:     192.168.1.2:47864 - "GET /reports/summary?month=2026-06 HTTP/1.1" 200 OK
+INFO:     192.168.1.2:47880 - "GET /reports/spent?month=2026-06 HTTP/1.1" 200 OK
+INFO:     192.168.1.2:47890 - "GET /networth HTTP/1.1" 200 OK
+INFO:     192.168.1.2:47898 - "GET /stats HTTP/1.1" 200 OK
+INFO:     192.168.1.2:47906 - "GET /reports/spent?month=2026-05 HTTP/1.1" 200 OK
+INFO:     192.168.1.2:52222 - "POST /ingest/sms HTTP/1.1" 202 Accepted
+INFO:     192.168.1.2:52230 - "POST /ingest/sms HTTP/1.1" 202 Accepted
+INFO:     192.168.1.2:52246 - "GET /reports/months HTTP/1.1" 200 OK
+INFO:     192.168.1.2:52250 - "GET /reports/summary?month=2026-06 HTTP/1.1" 200 OK
+INFO:     192.168.1.2:52266 - "GET /reports/spent?month=2026-06 HTTP/1.1" 200 OK
+INFO:     192.168.1.2:52268 - "GET /networth HTTP/1.1" 200 OK
+INFO:     192.168.1.2:52282 - "GET /stats HTTP/1.1" 200 OK
+INFO:     192.168.1.2:52292 - "GET /reports/spent?month=2026-05 HTTP/1.1" 200 OK
+Adding missing padding.
+Ignoring padding error: Invalid padding bytes.
+INFO:     192.168.1.2:52304 - "POST /sync/gmail HTTP/1.1" 200 OK
+INFO:     192.168.1.2:35398 - "GET /reports/months HTTP/1.1" 200 OK
+INFO:     192.168.1.2:35400 - "GET /reports/summary?month=2026-06 HTTP/1.1" 200 OK
+INFO:     192.168.1.2:35414 - "GET /reports/spent?month=2026-06 HTTP/1.1" 200 OK
+INFO:     192.168.1.2:35426 - "GET /networth HTTP/1.1" 200 OK
+INFO:     192.168.1.2:35428 - "GET /stats HTTP/1.1" 200 OK
+INFO:     192.168.1.2:36542 - "GET /reports/spent?month=2026-05 HTTP/1.1" 200 OK
+INFO:     192.168.1.2:33504 - "POST /ingest/sms HTTP/1.1" 202 Accepted
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [80045]
+INFO:     Started server process [96037]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     127.0.0.1:56882 - "GET /auth/config HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56885 - "GET /cards HTTP/1.1" 401 Unauthorized
+INFO:     192.168.1.2:51274 - "GET /profile HTTP/1.1" 401 Unauthorized
+INFO:     192.168.1.2:51284 - "GET /notifications HTTP/1.1" 401 Unauthorized
+INFO:     192.168.1.2:51302 - "GET /notifications HTTP/1.1" 401 Unauthorized
+INFO:     192.168.1.2:51292 - "GET /money-radar/summary HTTP/1.1" 401 Unauthorized
+INFO:     192.168.1.2:51318 - "GET /reports/months HTTP/1.1" 401 Unauthorized
+INFO:     192.168.1.2:51310 - "GET /reports/spent?start=2026-03-09&end=2026-06-08 HTTP/1.1" 401 Unauthorized
+INFO:     192.168.1.2:51324 - "GET /rewards HTTP/1.1" 401 Unauthorized
+INFO:     192.168.1.2:51742 - "GET /categories HTTP/1.1" 401 Unauthorized
+INFO:     192.168.1.2:51748 - "POST /ingest/sms HTTP/1.1" 401 Unauthorized
+INFO:     192.168.1.2:51764 - "POST /sync/gmail HTTP/1.1" 401 Unauthorized
+INFO:     192.168.1.2:59800 - "GET /auth/config HTTP/1.1" 200 OK
+INFO:     192.168.1.2:59802 - "GET /auth/nonce HTTP/1.1" 200 OK
+INFO:     192.168.1.2:59806 - "POST /auth/verify-google HTTP/1.1" 200 OK
+INFO:     192.168.1.2:59814 - "GET /profile HTTP/1.1" 200 OK
+INFO:     192.168.1.2:59880 - "GET /rewards HTTP/1.1" 200 OK
+INFO:     192.168.1.2:59832 - "GET /rewards HTTP/1.1" 200 OK
+INFO:     192.168.1.2:59852 - "GET /money-radar/summary HTTP/1.1" 200 OK
+INFO:     192.168.1.2:59864 - "GET /money-radar/summary HTTP/1.1" 200 OK
+INFO:     192.168.1.2:59906 - "GET /reports/spent?start=2026-03-09&end=2026-06-08 HTTP/1.1" 200 OK
+INFO:     192.168.1.2:59920 - "GET /reports/spent?start=2026-03-09&end=2026-06-08 HTTP/1.1" 200 OK
+INFO:     192.168.1.2:59862 - "GET /reports/months HTTP/1.1" 200 OK
+INFO:     192.168.1.2:59896 - "GET /reports/months HTTP/1.1" 200 OK
+INFO:     192.168.1.2:59944 - "GET /reports/months HTTP/1.1" 200 OK
+INFO:     192.168.1.2:59936 - "GET /reports/months HTTP/1.1" 200 OK
+INFO:     192.168.1.2:59950 - "GET /categories HTTP/1.1" 200 OK
+INFO:     192.168.1.2:59960 - "GET /categories HTTP/1.1" 200 OK
+INFO:     192.168.1.2:59822 - "GET /notifications HTTP/1.1" 200 OK
+INFO:     192.168.1.2:59848 - "GET /notifications HTTP/1.1" 200 OK
+INFO:     192.168.1.2:59986 - "GET /reports/summary?month=2026-06 HTTP/1.1" 200 OK
+INFO:     192.168.1.2:59970 - "GET /reports/summary?month=2026-06 HTTP/1.1" 200 OK
+INFO:     192.168.1.2:59996 - "GET /reports/summary?month=2026-06 HTTP/1.1" 200 OK
+INFO:     192.168.1.2:60012 - "GET /reports/summary?month=2026-06 HTTP/1.1" 200 OK
+INFO:     192.168.1.2:60034 - "GET /reports/spent?month=2026-06 HTTP/1.1" 200 OK
+INFO:     192.168.1.2:60022 - "GET /networth HTTP/1.1" 200 OK
+INFO:     192.168.1.2:49008 - "GET /networth HTTP/1.1" 200 OK
+INFO:     192.168.1.2:60044 - "GET /notifications HTTP/1.1" 200 OK
+INFO:     192.168.1.2:49022 - "GET /stats HTTP/1.1" 200 OK
+INFO:     192.168.1.2:49038 - "GET /reports/spent?month=2026-05 HTTP/1.1" 200 OK
+INFO:     192.168.1.2:49052 - "GET /reports/spent?month=2026-06 HTTP/1.1" 200 OK
+INFO:     192.168.1.2:37718 - "GET /networth HTTP/1.1" 200 OK
+INFO:     192.168.1.2:37730 - "GET /profile HTTP/1.1" 200 OK
+INFO:     192.168.1.2:37738 - "GET /notifications HTTP/1.1" 200 OK
+INFO:     192.168.1.2:37764 - "GET /rewards HTTP/1.1" 200 OK
+INFO:     192.168.1.2:37772 - "GET /money-radar/summary HTTP/1.1" 200 OK
+INFO:     192.168.1.2:37788 - "GET /reports/months HTTP/1.1" 200 OK
+INFO:     192.168.1.2:37800 - "GET /reports/spent?start=2026-03-09&end=2026-06-08 HTTP/1.1" 200 OK
+INFO:     192.168.1.2:37748 - "GET /notifications HTTP/1.1" 200 OK
+INFO:     192.168.1.2:37816 - "GET /categories HTTP/1.1" 200 OK
+INFO:     192.168.1.2:37818 - "GET /reports/summary?month=2026-06 HTTP/1.1" 200 OK
+INFO:     192.168.1.2:37826 - "GET /reports/spent?month=2026-06 HTTP/1.1" 200 OK
+INFO:     192.168.1.2:37828 - "GET /networth HTTP/1.1" 200 OK
+INFO:     192.168.1.2:37830 - "GET /networth HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65472 - "GET /auth/config HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50449 - "POST /push/register HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:50450 - "GET /notifications HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:51258 - "GET /notifications HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:53156 - "GET /notifications HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:55559 - "GET /notifications HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:56096 - "GET /auth/config HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56103 - "GET /auth/nonce HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56141 - "POST /auth/verify-google HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56151 - "GET /profile HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56157 - "GET /rewards HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56155 - "GET /money-radar/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56159 - "GET /reports/spent?start=2026-03-09&end=2026-06-08 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56158 - "GET /reports/months HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56164 - "GET /reports/months HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56165 - "GET /reports/spent?start=2026-03-09&end=2026-06-08 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56162 - "GET /money-radar/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56163 - "GET /rewards HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56167 - "GET /categories HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56168 - "GET /reports/summary?month=2026-06 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56170 - "GET /categories HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56169 - "GET /reports/summary?month=2026-06 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56172 - "GET /reports/spent?month=2026-06 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56173 - "GET /reports/spent?month=2026-06 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56161 - "GET /notifications HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56154 - "GET /notifications HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56176 - "GET /networth HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56177 - "GET /networth HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56179 - "GET /stats HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56181 - "GET /stats HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56182 - "GET /reports/spent?month=2026-05 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56184 - "GET /reports/spent?month=2026-05 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56188 - "GET /networth HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56185 - "POST /ingest/sms HTTP/1.1" 202 Accepted
+INFO:     127.0.0.1:56199 - "POST /ingest/sms HTTP/1.1" 202 Accepted
+INFO:     127.0.0.1:56230 - "GET /bills HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56234 - "GET /cards HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56231 - "POST /ingest/sms HTTP/1.1" 202 Accepted
+INFO:     127.0.0.1:56239 - "GET /cards/utilization HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56243 - "POST /ingest/sms HTTP/1.1" 202 Accepted
+INFO:     127.0.0.1:56255 - "POST /ingest/sms HTTP/1.1" 202 Accepted
+INFO:     127.0.0.1:56270 - "POST /ingest/sms HTTP/1.1" 202 Accepted
+INFO:     127.0.0.1:56281 - "POST /ingest/sms HTTP/1.1" 202 Accepted
+INFO:     127.0.0.1:56290 - "POST /ingest/sms HTTP/1.1" 202 Accepted
+INFO:     127.0.0.1:56298 - "POST /ingest/sms HTTP/1.1" 202 Accepted
+INFO:     127.0.0.1:56311 - "POST /ingest/sms HTTP/1.1" 202 Accepted
+INFO:     127.0.0.1:56320 - "POST /ingest/sms HTTP/1.1" 202 Accepted
+INFO:     127.0.0.1:56329 - "POST /ingest/sms HTTP/1.1" 202 Accepted
+INFO:     127.0.0.1:56353 - "POST /ingest/sms HTTP/1.1" 202 Accepted
+INFO:     127.0.0.1:56366 - "POST /ingest/sms HTTP/1.1" 202 Accepted
+INFO:     127.0.0.1:56376 - "POST /ingest/sms HTTP/1.1" 202 Accepted
+INFO:     127.0.0.1:56392 - "GET /categories HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56386 - "POST /ingest/sms HTTP/1.1" 202 Accepted
+INFO:     127.0.0.1:56395 - "GET /transactions/search?account_id=6&start=2025-06-07&end=2026-06-08&direction=debit HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56397 - "POST /ingest/sms HTTP/1.1" 202 Accepted
+INFO:     127.0.0.1:56432 - "POST /ingest/sms HTTP/1.1" 202 Accepted
+INFO:     127.0.0.1:56443 - "POST /ingest/sms HTTP/1.1" 202 Accepted
+INFO:     127.0.0.1:56458 - "POST /ingest/sms HTTP/1.1" 202 Accepted
+INFO:     127.0.0.1:56470 - "POST /ingest/sms HTTP/1.1" 202 Accepted
+INFO:     127.0.0.1:56482 - "POST /ingest/sms HTTP/1.1" 202 Accepted
+INFO:     127.0.0.1:56498 - "POST /ingest/sms HTTP/1.1" 202 Accepted
+INFO:     127.0.0.1:56511 - "POST /ingest/sms HTTP/1.1" 202 Accepted
+INFO:     127.0.0.1:56531 - "POST /ingest/sms HTTP/1.1" 202 Accepted
+INFO:     127.0.0.1:56568 - "POST /ingest/sms HTTP/1.1" 202 Accepted
+INFO:     127.0.0.1:56604 - "POST /ingest/sms HTTP/1.1" 202 Accepted
+INFO:     127.0.0.1:56643 - "POST /ingest/sms HTTP/1.1" 202 Accepted
+INFO:     127.0.0.1:56704 - "GET /categories HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56705 - "GET /transactions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56676 - "POST /ingest/sms HTTP/1.1" 202 Accepted
+INFO:     127.0.0.1:56729 - "POST /ingest/sms HTTP/1.1" 202 Accepted
+INFO:     127.0.0.1:56771 - "GET /categories HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56772 - "GET /money-radar/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56773 - "GET /reports/breakdown?start=2026-03-09&end=2026-06-08 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56781 - "POST /ingest/sms HTTP/1.1" 202 Accepted
+INFO:     127.0.0.1:56801 - "POST /ingest/sms HTTP/1.1" 202 Accepted
+INFO:     127.0.0.1:56816 - "POST /ingest/sms HTTP/1.1" 202 Accepted
+INFO:     127.0.0.1:56830 - "POST /ingest/sms HTTP/1.1" 202 Accepted
+INFO:     127.0.0.1:56839 - "POST /ingest/sms HTTP/1.1" 202 Accepted
+INFO:     127.0.0.1:56848 - "POST /ingest/sms HTTP/1.1" 202 Accepted
+INFO:     127.0.0.1:56869 - "POST /ingest/sms HTTP/1.1" 202 Accepted
+INFO:     127.0.0.1:56883 - "POST /ingest/sms HTTP/1.1" 202 Accepted
+INFO:     127.0.0.1:56893 - "POST /ingest/sms HTTP/1.1" 202 Accepted
+INFO:     127.0.0.1:56926 - "POST /ingest/sms HTTP/1.1" 202 Accepted
+INFO:     127.0.0.1:56949 - "POST /ingest/sms HTTP/1.1" 202 Accepted
+INFO:     127.0.0.1:56963 - "POST /ingest/sms HTTP/1.1" 202 Accepted
+INFO:     127.0.0.1:56974 - "POST /ingest/sms HTTP/1.1" 202 Accepted
+INFO:     127.0.0.1:56983 - "POST /ingest/sms HTTP/1.1" 202 Accepted
+INFO:     127.0.0.1:56995 - "POST /ingest/sms HTTP/1.1" 202 Accepted
+INFO:     127.0.0.1:57006 - "POST /ingest/sms HTTP/1.1" 202 Accepted
+INFO:     127.0.0.1:57021 - "POST /ingest/sms HTTP/1.1" 202 Accepted
+INFO:     127.0.0.1:57031 - "POST /ingest/sms HTTP/1.1" 202 Accepted
+INFO:     127.0.0.1:57040 - "POST /ingest/sms HTTP/1.1" 202 Accepted
+INFO:     127.0.0.1:57049 - "POST /ingest/sms HTTP/1.1" 202 Accepted
+INFO:     127.0.0.1:51368 - "GET /auth/config HTTP/1.1" 200 OK
+INFO:     192.168.1.2:51698 - "GET /profile HTTP/1.1" 200 OK
+INFO:     192.168.1.2:51686 - "POST /push/register HTTP/1.1" 200 OK
+INFO:     192.168.1.2:51710 - "GET /notifications HTTP/1.1" 200 OK
+INFO:     192.168.1.2:51732 - "GET /money-radar/summary HTTP/1.1" 200 OK
+INFO:     192.168.1.2:51716 - "GET /notifications HTTP/1.1" 200 OK
+INFO:     192.168.1.2:51740 - "GET /rewards HTTP/1.1" 200 OK
+INFO:     192.168.1.2:51746 - "GET /reports/months HTTP/1.1" 200 OK
+INFO:     192.168.1.2:51760 - "GET /reports/spent?start=2026-03-09&end=2026-06-08 HTTP/1.1" 200 OK
+INFO:     192.168.1.2:51766 - "GET /reports/summary?month=2026-06 HTTP/1.1" 200 OK
+INFO:     192.168.1.2:51772 - "GET /categories HTTP/1.1" 200 OK
+INFO:     192.168.1.2:51778 - "GET /reports/spent?month=2026-06 HTTP/1.1" 200 OK
+INFO:     192.168.1.2:51784 - "GET /networth HTTP/1.1" 200 OK
+INFO:     192.168.1.2:51822 - "GET /stats HTTP/1.1" 200 OK
+INFO:     192.168.1.2:51814 - "GET /networth HTTP/1.1" 200 OK
+INFO:     192.168.1.2:51832 - "GET /reports/spent?month=2026-05 HTTP/1.1" 200 OK
+Adding missing padding.
+Ignoring padding error: Invalid padding bytes.
+INFO:     192.168.1.2:51798 - "POST /sync/gmail HTTP/1.1" 200 OK
+INFO:     192.168.1.2:39974 - "GET /reports/months HTTP/1.1" 200 OK
+INFO:     192.168.1.2:39982 - "GET /reports/summary?month=2026-06 HTTP/1.1" 200 OK
+INFO:     192.168.1.2:39996 - "GET /reports/spent?month=2026-06 HTTP/1.1" 200 OK
+INFO:     192.168.1.2:40006 - "GET /networth HTTP/1.1" 200 OK
+INFO:     192.168.1.2:40018 - "GET /stats HTTP/1.1" 200 OK
+INFO:     192.168.1.2:40034 - "GET /reports/spent?month=2026-05 HTTP/1.1" 200 OK
+INFO:     192.168.1.2:36330 - "GET /notifications HTTP/1.1" 200 OK
+INFO:     192.168.1.4:57889 - "GET /auth/config HTTP/1.1" 200 OK
+INFO:     192.168.1.2:36346 - "GET /reports/months HTTP/1.1" 200 OK
+INFO:     192.168.1.2:36354 - "GET /reports/summary?month=2026-06 HTTP/1.1" 200 OK
+INFO:     192.168.1.2:36368 - "GET /reports/spent?month=2026-06 HTTP/1.1" 200 OK
+INFO:     192.168.1.2:36374 - "GET /networth HTTP/1.1" 200 OK
+INFO:     192.168.1.2:36376 - "GET /networth HTTP/1.1" 200 OK
+INFO:     192.168.1.2:36392 - "GET /stats HTTP/1.1" 200 OK
+INFO:     192.168.1.2:36394 - "GET /reports/spent?month=2026-05 HTTP/1.1" 200 OK
+INFO:     192.168.1.2:42246 - "GET /categories HTTP/1.1" 200 OK
+INFO:     192.168.1.2:42250 - "GET /transactions HTTP/1.1" 200 OK
+INFO:     192.168.1.2:42260 - "GET /reports/months HTTP/1.1" 200 OK
+INFO:     192.168.1.2:42264 - "GET /reports/summary?month=2026-06 HTTP/1.1" 200 OK
+INFO:     192.168.1.2:42268 - "GET /reports/spent?month=2026-06 HTTP/1.1" 200 OK
+INFO:     192.168.1.2:42280 - "GET /networth HTTP/1.1" 200 OK
+INFO:     192.168.1.2:41108 - "GET /stats HTTP/1.1" 200 OK
+INFO:     192.168.1.2:41116 - "GET /reports/spent?month=2026-05 HTTP/1.1" 200 OK
+INFO:     192.168.1.2:42286 - "GET /networth HTTP/1.1" 200 OK
+INFO:     192.168.1.2:42916 - "GET /bills HTTP/1.1" 200 OK
+INFO:     192.168.1.2:42924 - "GET /cards HTTP/1.1" 200 OK
+INFO:     192.168.1.2:45578 - "GET /cards/utilization HTTP/1.1" 200 OK
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [96037]
+INFO:     Started server process [31741]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     127.0.0.1:49960 - "GET /auth/config HTTP/1.1" 200 OK
+INFO:     192.168.1.2:40938 - "POST /push/register HTTP/1.1" 401 Unauthorized
+INFO:     192.168.1.2:40956 - "GET /notifications HTTP/1.1" 401 Unauthorized
+INFO:     192.168.1.2:40982 - "GET /money-radar/summary HTTP/1.1" 401 Unauthorized
+INFO:     192.168.1.2:40966 - "GET /notifications HTTP/1.1" 401 Unauthorized
+INFO:     192.168.1.2:40994 - "GET /rewards HTTP/1.1" 401 Unauthorized
+INFO:     192.168.1.2:40996 - "GET /reports/months HTTP/1.1" 401 Unauthorized
+INFO:     192.168.1.2:41000 - "GET /reports/spent?start=2026-03-09&end=2026-06-08 HTTP/1.1" 401 Unauthorized
+INFO:     192.168.1.2:41006 - "GET /categories HTTP/1.1" 401 Unauthorized
+INFO:     192.168.1.2:41016 - "POST /sync/gmail HTTP/1.1" 401 Unauthorized
+INFO:     192.168.1.2:41032 - "GET /networth HTTP/1.1" 401 Unauthorized
+INFO:     192.168.1.2:41038 - "GET /reports/months HTTP/1.1" 401 Unauthorized
+INFO:     192.168.1.2:41050 - "GET /reports/summary?month=2026-06 HTTP/1.1" 401 Unauthorized
+INFO:     192.168.1.2:41052 - "GET /reports/spent?month=2026-06 HTTP/1.1" 401 Unauthorized
+INFO:     192.168.1.2:41068 - "GET /networth HTTP/1.1" 401 Unauthorized
+INFO:     192.168.1.2:41082 - "GET /stats HTTP/1.1" 401 Unauthorized
+INFO:     192.168.1.2:41084 - "GET /reports/spent?month=2026-05 HTTP/1.1" 401 Unauthorized
+INFO:     192.168.1.2:53074 - "GET /bills HTTP/1.1" 401 Unauthorized
+INFO:     192.168.1.2:53082 - "GET /cards HTTP/1.1" 401 Unauthorized
+INFO:     192.168.1.2:53092 - "GET /cards/utilization HTTP/1.1" 401 Unauthorized
+INFO:     192.168.1.2:53098 - "GET /rewards HTTP/1.1" 401 Unauthorized
+INFO:     192.168.1.2:50756 - "GET /portfolio HTTP/1.1" 401 Unauthorized
+INFO:     192.168.1.2:50760 - "POST /sync/portfolio HTTP/1.1" 401 Unauthorized
+INFO:     192.168.1.2:50766 - "GET /portfolio HTTP/1.1" 401 Unauthorized
+INFO:     192.168.1.2:50782 - "GET /reports/months HTTP/1.1" 401 Unauthorized
+INFO:     192.168.1.2:50792 - "GET /reports/summary?month=2026-06 HTTP/1.1" 401 Unauthorized
+INFO:     192.168.1.2:50798 - "GET /reports/spent?month=2026-06 HTTP/1.1" 401 Unauthorized
+INFO:     192.168.1.2:50800 - "GET /networth HTTP/1.1" 401 Unauthorized
+INFO:     192.168.1.2:50804 - "GET /networth HTTP/1.1" 401 Unauthorized
+INFO:     192.168.1.2:50808 - "GET /stats HTTP/1.1" 401 Unauthorized
+INFO:     192.168.1.2:50812 - "GET /reports/spent?month=2026-05 HTTP/1.1" 401 Unauthorized
+INFO:     192.168.1.2:52184 - "GET /notifications HTTP/1.1" 401 Unauthorized
+INFO:     192.168.1.2:43046 - "GET /networth HTTP/1.1" 401 Unauthorized
+INFO:     192.168.1.2:33742 - "GET /categories HTTP/1.1" 401 Unauthorized
+INFO:     192.168.1.2:33748 - "GET /transactions HTTP/1.1" 401 Unauthorized
+INFO:     192.168.1.2:33764 - "GET /reports/months HTTP/1.1" 401 Unauthorized
+INFO:     192.168.1.2:33768 - "GET /reports/summary?month=2026-06 HTTP/1.1" 401 Unauthorized
+INFO:     192.168.1.2:33772 - "GET /reports/spent?month=2026-06 HTTP/1.1" 401 Unauthorized
+INFO:     192.168.1.2:33774 - "GET /networth HTTP/1.1" 401 Unauthorized
+INFO:     192.168.1.2:33784 - "GET /stats HTTP/1.1" 401 Unauthorized
+INFO:     192.168.1.2:33796 - "GET /reports/spent?month=2026-05 HTTP/1.1" 401 Unauthorized
+INFO:     192.168.1.2:33800 - "GET /networth HTTP/1.1" 401 Unauthorized
+INFO:     192.168.1.2:33808 - "GET /notifications HTTP/1.1" 401 Unauthorized
+INFO:     192.168.1.2:33818 - "GET /savings HTTP/1.1" 401 Unauthorized
+INFO:     192.168.1.2:33820 - "GET /categories HTTP/1.1" 401 Unauthorized
+INFO:     192.168.1.2:33834 - "GET /money-radar/summary HTTP/1.1" 401 Unauthorized
+INFO:     192.168.1.2:33842 - "GET /reports/breakdown?start=2026-03-09&end=2026-06-08 HTTP/1.1" 401 Unauthorized
+INFO:     192.168.1.2:52518 - "GET /notifications HTTP/1.1" 401 Unauthorized
+INFO:     192.168.1.2:39942 - "POST /push/register HTTP/1.1" 401 Unauthorized
+INFO:     192.168.1.2:39944 - "GET /notifications HTTP/1.1" 401 Unauthorized
+INFO:     192.168.1.2:39946 - "GET /auth/config HTTP/1.1" 200 OK
+INFO:     192.168.1.2:39960 - "GET /auth/nonce HTTP/1.1" 200 OK
+INFO:     192.168.1.2:33708 - "POST /auth/verify-google HTTP/1.1" 200 OK
+INFO:     192.168.1.2:33792 - "GET /rewards HTTP/1.1" 200 OK
+INFO:     192.168.1.2:33752 - "GET /rewards HTTP/1.1" 200 OK
+INFO:     192.168.1.2:33746 - "GET /money-radar/summary HTTP/1.1" 200 OK
+INFO:     192.168.1.2:33788 - "GET /money-radar/summary HTTP/1.1" 200 OK
+INFO:     192.168.1.2:33806 - "GET /reports/spent?start=2026-03-09&end=2026-06-08 HTTP/1.1" 200 OK
+INFO:     192.168.1.2:33768 - "GET /reports/spent?start=2026-03-09&end=2026-06-08 HTTP/1.1" 200 OK
+INFO:     192.168.1.2:33794 - "GET /reports/months HTTP/1.1" 200 OK
+INFO:     192.168.1.2:33758 - "GET /reports/months HTTP/1.1" 200 OK
+INFO:     192.168.1.2:33812 - "GET /categories HTTP/1.1" 200 OK
+INFO:     192.168.1.2:33826 - "GET /categories HTTP/1.1" 200 OK
+INFO:     192.168.1.2:33846 - "GET /reports/summary?month=2026-06 HTTP/1.1" 200 OK
+INFO:     192.168.1.2:33836 - "GET /reports/summary?month=2026-06 HTTP/1.1" 200 OK
+INFO:     192.168.1.2:33862 - "GET /reports/spent?month=2026-06 HTTP/1.1" 200 OK
+INFO:     192.168.1.2:33878 - "GET /reports/spent?month=2026-06 HTTP/1.1" 200 OK
+INFO:     192.168.1.2:33744 - "GET /notifications HTTP/1.1" 200 OK
+INFO:     192.168.1.2:33782 - "GET /notifications HTTP/1.1" 200 OK
+INFO:     192.168.1.2:33894 - "GET /networth HTTP/1.1" 200 OK
+INFO:     192.168.1.2:33890 - "GET /networth HTTP/1.1" 200 OK
+INFO:     192.168.1.2:33908 - "GET /networth HTTP/1.1" 200 OK
+INFO:     192.168.1.2:33936 - "GET /bills HTTP/1.1" 200 OK
+INFO:     192.168.1.2:33932 - "GET /stats HTTP/1.1" 200 OK
+INFO:     192.168.1.2:33916 - "GET /stats HTTP/1.1" 200 OK
+INFO:     192.168.1.2:33952 - "GET /reports/spent?month=2026-05 HTTP/1.1" 200 OK
+INFO:     192.168.1.2:33940 - "GET /reports/spent?month=2026-05 HTTP/1.1" 200 OK
+Adding missing padding.
+Ignoring padding error: Invalid padding bytes.
+INFO:     192.168.1.2:33958 - "GET /cards HTTP/1.1" 200 OK
+INFO:     192.168.1.2:59192 - "GET /cards/utilization HTTP/1.1" 200 OK
+INFO:     192.168.1.2:33898 - "POST /sync/gmail HTTP/1.1" 200 OK
+INFO:     192.168.1.2:34334 - "GET /notifications HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51394 - "GET /auth/config HTTP/1.1" 200 OK
+INFO:     192.168.1.4:56498 - "GET /auth/config HTTP/1.1" 200 OK
+INFO:     100.86.25.11:55497 - "GET /auth/config HTTP/1.1" 200 OK
+INFO:     100.83.247.71:36642 - "GET /profile HTTP/1.1" 200 OK
+INFO:     100.83.247.71:36628 - "POST /push/register HTTP/1.1" 200 OK
+INFO:     100.83.247.71:36658 - "GET /notifications HTTP/1.1" 200 OK
+INFO:     100.83.247.71:36690 - "GET /money-radar/summary HTTP/1.1" 200 OK
+INFO:     100.83.247.71:36700 - "GET /rewards HTTP/1.1" 200 OK
+INFO:     100.83.247.71:36710 - "GET /reports/months HTTP/1.1" 200 OK
+INFO:     100.83.247.71:36674 - "GET /notifications HTTP/1.1" 200 OK
+INFO:     100.83.247.71:36712 - "GET /reports/spent?start=2026-03-09&end=2026-06-08 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:36726 - "GET /reports/summary?month=2026-06 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:36740 - "GET /categories HTTP/1.1" 200 OK
+INFO:     100.83.247.71:36756 - "GET /reports/spent?month=2026-06 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:36770 - "GET /networth HTTP/1.1" 200 OK
+INFO:     100.83.247.71:36786 - "GET /networth HTTP/1.1" 200 OK
+INFO:     100.83.247.71:36808 - "GET /stats HTTP/1.1" 200 OK
+INFO:     100.83.247.71:45484 - "GET /reports/spent?month=2026-05 HTTP/1.1" 200 OK
+Adding missing padding.
+Ignoring padding error: Invalid padding bytes.
+INFO:     100.83.247.71:36800 - "POST /sync/gmail HTTP/1.1" 200 OK
+INFO:     100.83.247.71:45880 - "GET /reports/months HTTP/1.1" 200 OK
+INFO:     100.83.247.71:45890 - "GET /reports/summary?month=2026-06 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:45896 - "GET /reports/spent?month=2026-06 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:45908 - "GET /networth HTTP/1.1" 200 OK
+INFO:     100.83.247.71:45914 - "GET /stats HTTP/1.1" 200 OK
+INFO:     100.83.247.71:45926 - "GET /reports/spent?month=2026-05 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:54676 - "GET /categories HTTP/1.1" 200 OK
+INFO:     100.83.247.71:54660 - "GET /money-radar/summary HTTP/1.1" 200 OK
+INFO:     100.83.247.71:54686 - "GET /reports/breakdown?start=2026-03-09&end=2026-06-08 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:54692 - "GET /portfolio HTTP/1.1" 200 OK
+INFO:     100.83.247.71:54702 - "GET /bills HTTP/1.1" 200 OK
+INFO:     100.83.247.71:54704 - "GET /cards HTTP/1.1" 200 OK
+INFO:     100.83.247.71:54716 - "GET /cards/utilization HTTP/1.1" 200 OK
+INFO:     100.83.247.71:48090 - "GET /reports/months HTTP/1.1" 200 OK
+INFO:     100.83.247.71:49236 - "GET /reports/summary?month=2026-06 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:49238 - "GET /reports/spent?month=2026-06 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:49246 - "GET /networth HTTP/1.1" 200 OK
+INFO:     100.83.247.71:49258 - "GET /networth HTTP/1.1" 200 OK
+INFO:     100.83.247.71:49266 - "GET /stats HTTP/1.1" 200 OK
+INFO:     100.83.247.71:49280 - "GET /reports/spent?month=2026-05 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:49282 - "GET /categories HTTP/1.1" 200 OK
+INFO:     100.83.247.71:49296 - "GET /transactions HTTP/1.1" 200 OK
+INFO:     100.83.247.71:55086 - "POST /push/register HTTP/1.1" 200 OK
+INFO:     100.83.247.71:55098 - "GET /profile HTTP/1.1" 200 OK
+INFO:     100.83.247.71:55112 - "GET /notifications HTTP/1.1" 200 OK
+INFO:     100.83.247.71:55124 - "GET /notifications HTTP/1.1" 200 OK
+INFO:     100.83.247.71:55158 - "GET /reports/months HTTP/1.1" 200 OK
+INFO:     100.83.247.71:55144 - "GET /rewards HTTP/1.1" 200 OK
+INFO:     100.83.247.71:55170 - "GET /reports/spent?start=2026-03-09&end=2026-06-08 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:55134 - "GET /money-radar/summary HTTP/1.1" 200 OK
+INFO:     100.83.247.71:55174 - "GET /categories HTTP/1.1" 200 OK
+INFO:     100.83.247.71:55186 - "GET /reports/summary?month=2026-06 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:55202 - "GET /networth HTTP/1.1" 200 OK
+INFO:     100.83.247.71:55204 - "GET /reports/spent?month=2026-06 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:55220 - "GET /networth HTTP/1.1" 200 OK
+Adding missing padding.
+Ignoring padding error: Invalid padding bytes.
+INFO:     100.83.247.71:57998 - "GET /categories HTTP/1.1" 200 OK
+INFO:     100.83.247.71:58004 - "GET /money-radar/summary HTTP/1.1" 200 OK
+INFO:     100.83.247.71:58018 - "GET /reports/breakdown?start=2026-03-09&end=2026-06-08 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:55222 - "GET /stats HTTP/1.1" 200 OK
+INFO:     100.83.247.71:55200 - "POST /sync/gmail HTTP/1.1" 200 OK
+INFO:     100.83.247.71:58028 - "GET /reports/spent?month=2026-05 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:58040 - "POST /push/register HTTP/1.1" 200 OK
+INFO:     100.83.247.71:58422 - "GET /notifications HTTP/1.1" 200 OK
+INFO:     100.83.247.71:58412 - "GET /profile HTTP/1.1" 200 OK
+INFO:     100.83.247.71:58446 - "GET /money-radar/summary HTTP/1.1" 200 OK
+INFO:     100.83.247.71:58448 - "GET /rewards HTTP/1.1" 200 OK
+INFO:     100.83.247.71:58456 - "GET /reports/months HTTP/1.1" 200 OK
+INFO:     100.83.247.71:58432 - "GET /notifications HTTP/1.1" 200 OK
+INFO:     100.83.247.71:58472 - "GET /reports/spent?start=2026-03-09&end=2026-06-08 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:58500 - "GET /categories HTTP/1.1" 200 OK
+INFO:     100.83.247.71:58486 - "GET /reports/summary?month=2026-06 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:58514 - "GET /reports/spent?month=2026-06 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:58504 - "GET /networth HTTP/1.1" 200 OK
+INFO:     100.83.247.71:58522 - "GET /networth HTTP/1.1" 200 OK
+Adding missing padding.
+Ignoring padding error: Invalid padding bytes.
+INFO:     100.83.247.71:58546 - "GET /categories HTTP/1.1" 200 OK
+INFO:     100.83.247.71:58548 - "GET /money-radar/summary HTTP/1.1" 200 OK
+INFO:     100.83.247.71:58562 - "GET /reports/breakdown?start=2026-03-09&end=2026-06-08 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:58530 - "GET /stats HTTP/1.1" 200 OK
+INFO:     100.83.247.71:58566 - "GET /reports/spent?month=2026-05 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:58502 - "POST /sync/gmail HTTP/1.1" 200 OK
+INFO:     100.83.247.71:47472 - "GET /notifications HTTP/1.1" 200 OK
+INFO:     100.83.247.71:48802 - "POST /push/register HTTP/1.1" 200 OK
+INFO:     100.83.247.71:48818 - "GET /profile HTTP/1.1" 200 OK
+INFO:     100.83.247.71:48824 - "GET /notifications HTTP/1.1" 200 OK
+INFO:     100.83.247.71:48838 - "GET /rewards HTTP/1.1" 200 OK
+INFO:     100.83.247.71:48842 - "GET /money-radar/summary HTTP/1.1" 200 OK
+INFO:     100.83.247.71:48864 - "GET /reports/spent?start=2026-03-09&end=2026-06-08 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:48854 - "GET /reports/months HTTP/1.1" 200 OK
+INFO:     100.83.247.71:48826 - "GET /notifications HTTP/1.1" 200 OK
+INFO:     100.83.247.71:48874 - "GET /categories HTTP/1.1" 200 OK
+INFO:     100.83.247.71:48876 - "GET /reports/summary?month=2026-06 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:48884 - "GET /reports/spent?month=2026-06 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:48904 - "GET /networth HTTP/1.1" 200 OK
+INFO:     100.83.247.71:48906 - "GET /stats HTTP/1.1" 200 OK
+INFO:     100.83.247.71:48922 - "GET /reports/spent?month=2026-05 HTTP/1.1" 200 OK
+Adding missing padding.
+Ignoring padding error: Invalid padding bytes.
+INFO:     100.83.247.71:46856 - "GET /categories HTTP/1.1" 200 OK
+INFO:     100.83.247.71:46860 - "GET /transactions HTTP/1.1" 200 OK
+INFO:     100.83.247.71:48892 - "POST /sync/gmail HTTP/1.1" 200 OK
+INFO:     100.83.247.71:48612 - "GET /categories HTTP/1.1" 200 OK
+INFO:     100.83.247.71:48616 - "GET /money-radar/summary HTTP/1.1" 200 OK
+INFO:     100.83.247.71:48624 - "GET /reports/breakdown?start=2026-03-09&end=2026-06-08 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:48626 - "GET /reports/rails?start=2026-03-09&end=2026-06-08 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:48640 - "GET /reports/spending-patterns?start=2026-03-09&end=2026-06-08 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:50150 - "GET /savings HTTP/1.1" 200 OK
+INFO:     100.83.247.71:50152 - "GET /portfolio HTTP/1.1" 200 OK
+INFO:     100.83.247.71:34976 - "GET /bills HTTP/1.1" 200 OK
+INFO:     100.83.247.71:34984 - "GET /cards HTTP/1.1" 200 OK
+INFO:     100.83.247.71:34992 - "GET /cards/utilization HTTP/1.1" 200 OK
+INFO:     100.83.247.71:35794 - "GET /categories HTTP/1.1" 200 OK
+INFO:     100.83.247.71:35806 - "GET /transactions/search?account_id=6&start=2025-06-07&end=2026-06-08&direction=debit HTTP/1.1" 200 OK
+INFO:     100.83.247.71:46840 - "POST /ingest/sms HTTP/1.1" 202 Accepted
+INFO:     182.77.72.27:0 - "GET /health HTTP/1.1" 401 Unauthorized
+INFO:     182.77.72.27:0 - "GET /.well-known/openid-configuration HTTP/1.1" 401 Unauthorized
+INFO:     100.83.247.71:46924 - "GET /profile HTTP/1.1" 200 OK
+INFO:     100.83.247.71:46908 - "POST /push/register HTTP/1.1" 200 OK
+INFO:     100.83.247.71:46942 - "GET /rewards HTTP/1.1" 200 OK
+INFO:     100.83.247.71:46938 - "GET /reports/months HTTP/1.1" 200 OK
+INFO:     100.83.247.71:46944 - "GET /reports/spent?start=2026-03-09&end=2026-06-08 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:46952 - "GET /money-radar/summary HTTP/1.1" 200 OK
+INFO:     100.83.247.71:46962 - "GET /notifications HTTP/1.1" 200 OK
+INFO:     100.83.247.71:46982 - "GET /categories HTTP/1.1" 200 OK
+INFO:     100.83.247.71:46968 - "GET /reports/summary?month=2026-06 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:47012 - "GET /networth HTTP/1.1" 200 OK
+INFO:     100.83.247.71:47024 - "GET /reports/spent?month=2026-06 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:47034 - "GET /networth HTTP/1.1" 200 OK
+INFO:     100.83.247.71:46996 - "POST /ingest/sms HTTP/1.1" 202 Accepted
+INFO:     100.83.247.71:47042 - "GET /stats HTTP/1.1" 200 OK
+INFO:     100.83.247.71:47058 - "GET /reports/spent?month=2026-05 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:47056 - "POST /ingest/sms HTTP/1.1" 202 Accepted
+Adding missing padding.
+Ignoring padding error: Invalid padding bytes.
+INFO:     100.83.247.71:47062 - "POST /sync/gmail HTTP/1.1" 200 OK
+INFO:     100.83.247.71:44882 - "GET /reports/months HTTP/1.1" 200 OK
+INFO:     100.83.247.71:44894 - "GET /reports/summary?month=2026-06 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:44902 - "GET /reports/spent?month=2026-06 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:44910 - "GET /networth HTTP/1.1" 200 OK
+INFO:     100.83.247.71:44914 - "GET /stats HTTP/1.1" 200 OK
+INFO:     100.83.247.71:44922 - "GET /reports/spent?month=2026-05 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:44926 - "GET /portfolio HTTP/1.1" 200 OK
+INFO:     100.83.247.71:33926 - "GET /notifications HTTP/1.1" 200 OK
+Adding missing padding.
+Ignoring padding error: Invalid padding bytes.
+INFO:     100.83.247.71:47500 - "POST /sync/portfolio HTTP/1.1" 200 OK
+INFO:     100.83.247.71:47514 - "GET /portfolio HTTP/1.1" 200 OK
+INFO:     182.77.72.27:0 - "GET /health HTTP/1.1" 401 Unauthorized
+INFO:     182.77.72.27:0 - "GET /health HTTP/1.1" 401 Unauthorized
+INFO:     182.77.72.27:0 - "GET /.well-known/openid-configuration HTTP/1.1" 401 Unauthorized
+INFO:     182.77.72.27:0 - "GET /.well-known/jwks.json HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:59114 - "GET /health HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:59011 - "GET /auth/config HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59307 - "GET /auth/config HTTP/1.1" 200 OK
+INFO:     100.83.247.71:50000 - "GET /profile HTTP/1.1" 200 OK
+INFO:     100.83.247.71:49996 - "POST /push/register HTTP/1.1" 200 OK
+INFO:     100.83.247.71:50018 - "GET /money-radar/summary HTTP/1.1" 200 OK
+INFO:     100.83.247.71:50034 - "GET /rewards HTTP/1.1" 200 OK
+INFO:     100.83.247.71:50048 - "GET /reports/months HTTP/1.1" 200 OK
+INFO:     100.83.247.71:50050 - "GET /reports/spent?start=2026-03-10&end=2026-06-09 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:50070 - "GET /categories HTTP/1.1" 200 OK
+INFO:     100.83.247.71:50066 - "GET /reports/summary?month=2026-06 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:49998 - "GET /notifications HTTP/1.1" 200 OK
+INFO:     100.83.247.71:50004 - "GET /notifications HTTP/1.1" 200 OK
+INFO:     100.83.247.71:50082 - "GET /reports/spent?month=2026-06 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:50094 - "GET /networth HTTP/1.1" 200 OK
+INFO:     100.83.247.71:50110 - "GET /networth HTTP/1.1" 200 OK
+INFO:     100.83.247.71:50114 - "GET /stats HTTP/1.1" 200 OK
+INFO:     100.83.247.71:50128 - "GET /reports/spent?month=2026-05 HTTP/1.1" 200 OK
+Adding missing padding.
+Ignoring padding error: Invalid padding bytes.
+INFO:     100.83.247.71:52886 - "GET /money-radar HTTP/1.1" 200 OK
+INFO:     100.83.247.71:52902 - "POST /money-radar/seen HTTP/1.1" 200 OK
+INFO:     100.83.247.71:52870 - "GET /networth HTTP/1.1" 200 OK
+INFO:     100.83.247.71:50098 - "POST /sync/gmail HTTP/1.1" 200 OK
+INFO:     100.83.247.71:52910 - "POST /money-radar/3/dismiss HTTP/1.1" 200 OK
+INFO:     100.83.247.71:51638 - "GET /reports/months HTTP/1.1" 200 OK
+INFO:     100.83.247.71:51650 - "GET /reports/summary?month=2026-06 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:51658 - "GET /reports/spent?month=2026-06 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:51664 - "GET /networth HTTP/1.1" 200 OK
+INFO:     100.83.247.71:51670 - "GET /stats HTTP/1.1" 200 OK
+INFO:     100.83.247.71:51678 - "GET /reports/spent?month=2026-05 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:51684 - "GET /networth HTTP/1.1" 200 OK
+INFO:     100.83.247.71:51694 - "GET /categories HTTP/1.1" 200 OK
+INFO:     100.83.247.71:51690 - "GET /networth HTTP/1.1" 200 OK
+INFO:     100.83.247.71:51700 - "GET /money-radar/summary HTTP/1.1" 200 OK
+INFO:     100.83.247.71:51708 - "GET /reports/breakdown?start=2026-03-10&end=2026-06-09 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:57528 - "GET /profile HTTP/1.1" 200 OK
+INFO:     100.83.247.71:57508 - "POST /push/register HTTP/1.1" 200 OK
+INFO:     100.83.247.71:57554 - "GET /reports/months HTTP/1.1" 200 OK
+INFO:     100.83.247.71:57558 - "GET /reports/spent?start=2026-03-10&end=2026-06-09 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:57552 - "GET /rewards HTTP/1.1" 200 OK
+INFO:     100.83.247.71:57546 - "GET /money-radar/summary HTTP/1.1" 200 OK
+INFO:     100.83.247.71:57600 - "GET /categories HTTP/1.1" 200 OK
+INFO:     100.83.247.71:57592 - "GET /reports/summary?month=2026-06 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:57582 - "GET /networth HTTP/1.1" 200 OK
+INFO:     100.83.247.71:57614 - "GET /reports/spent?month=2026-06 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:57514 - "GET /notifications HTTP/1.1" 200 OK
+INFO:     100.83.247.71:57542 - "GET /notifications HTTP/1.1" 200 OK
+INFO:     100.83.247.71:57616 - "GET /networth HTTP/1.1" 200 OK
+INFO:     100.83.247.71:57628 - "GET /stats HTTP/1.1" 200 OK
+INFO:     100.83.247.71:57634 - "GET /reports/spent?month=2026-05 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:57572 - "POST /ingest/sms HTTP/1.1" 202 Accepted
+Adding missing padding.
+Ignoring padding error: Invalid padding bytes.
+INFO:     100.83.247.71:57640 - "POST /sync/gmail HTTP/1.1" 200 OK
+INFO:     100.83.247.71:57018 - "GET /reports/months HTTP/1.1" 200 OK
+INFO:     100.83.247.71:57030 - "GET /reports/summary?month=2026-06 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:57040 - "GET /reports/spent?month=2026-06 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:57044 - "GET /networth HTTP/1.1" 200 OK
+INFO:     100.83.247.71:57050 - "GET /stats HTTP/1.1" 200 OK
+INFO:     100.83.247.71:57060 - "GET /reports/spent?month=2026-05 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:57064 - "GET /reports/summary?month=2026-05 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:57074 - "GET /reports/spent?month=2026-05 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:57082 - "GET /networth HTTP/1.1" 200 OK
+INFO:     100.83.247.71:57094 - "GET /stats HTTP/1.1" 200 OK
+INFO:     100.83.247.71:57108 - "GET /reports/spent?month=2026-04 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:58718 - "GET /reports/summary?month=2026-06 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:58722 - "GET /reports/spent?month=2026-06 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:58726 - "GET /networth HTTP/1.1" 200 OK
+INFO:     100.83.247.71:58728 - "GET /stats HTTP/1.1" 200 OK
+INFO:     100.83.247.71:58734 - "GET /reports/spent?month=2026-05 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:39192 - "GET /reports/summary?month=2026-05 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:39204 - "GET /reports/spent?month=2026-05 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:39218 - "GET /networth HTTP/1.1" 200 OK
+INFO:     100.83.247.71:39232 - "GET /stats HTTP/1.1" 200 OK
+INFO:     100.83.247.71:39246 - "GET /reports/spent?month=2026-04 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:35538 - "GET /categories HTTP/1.1" 200 OK
+INFO:     100.83.247.71:35550 - "GET /transactions HTTP/1.1" 200 OK
+INFO:     100.83.247.71:49690 - "GET /categories HTTP/1.1" 200 OK
+INFO:     100.83.247.71:49700 - "GET /money-radar/summary HTTP/1.1" 200 OK
+INFO:     100.83.247.71:49706 - "GET /reports/breakdown?start=2026-03-10&end=2026-06-09 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:54002 - "GET /reports/breakdown?start=2025-12-10&end=2026-06-09 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:54010 - "GET /reports/rails?start=2026-03-10&end=2026-06-09 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:54012 - "GET /reports/spending-patterns?start=2026-03-10&end=2026-06-09 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:54232 - "GET /reports/savings-rate?months=6 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:54244 - "GET /insights HTTP/1.1" 200 OK
+INFO:     100.83.247.71:54254 - "GET /reports/subscriptions?start=2026-03-10&end=2026-06-09 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:54256 - "GET /reports/small-leaks?start=2026-03-10&end=2026-06-09 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:54264 - "GET /goals HTTP/1.1" 200 OK
+INFO:     100.83.247.71:39298 - "GET /categories HTTP/1.1" 200 OK
+INFO:     100.83.247.71:39304 - "GET /budget/2026-06 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:38000 - "GET /rewards HTTP/1.1" 200 OK
+INFO:     100.83.247.71:48256 - "GET /money-radar HTTP/1.1" 200 OK
+INFO:     100.83.247.71:48262 - "POST /money-radar/seen HTTP/1.1" 200 OK
+INFO:     100.83.247.71:47104 - "GET /savings HTTP/1.1" 200 OK
+INFO:     100.83.247.71:47112 - "GET /portfolio HTTP/1.1" 200 OK
+INFO:     100.83.247.71:60352 - "GET /bills HTTP/1.1" 200 OK
+INFO:     100.83.247.71:60368 - "GET /cards HTTP/1.1" 200 OK
+INFO:     100.83.247.71:60370 - "GET /cards/utilization HTTP/1.1" 200 OK
+INFO:     100.83.247.71:46028 - "GET /categories HTTP/1.1" 200 OK
+INFO:     100.83.247.71:46032 - "GET /transactions/search?account_id=2&start=2025-06-08&end=2026-06-09&direction=debit HTTP/1.1" 200 OK
+INFO:     100.83.247.71:55444 - "GET /categories HTTP/1.1" 200 OK
+INFO:     100.83.247.71:55452 - "GET /transactions/search?account_id=6&start=2025-06-08&end=2026-06-09&direction=debit HTTP/1.1" 200 OK
+INFO:     100.83.247.71:55464 - "GET /categories HTTP/1.1" 200 OK
+INFO:     100.83.247.71:55478 - "GET /transactions/search?account_id=6&start=2025-06-08&end=2026-06-09&direction=debit HTTP/1.1" 200 OK
+INFO:     100.83.247.71:55482 - "GET /categories HTTP/1.1" 200 OK
+INFO:     100.83.247.71:55488 - "GET /transactions/search?account_id=2&start=2025-06-08&end=2026-06-09&direction=debit HTTP/1.1" 200 OK
+INFO:     100.83.247.71:34124 - "GET /categories HTTP/1.1" 200 OK
+INFO:     100.83.247.71:34126 - "GET /transactions/search?account_id=1&start=2025-06-08&end=2026-06-09&direction=debit HTTP/1.1" 200 OK
+INFO:     100.83.247.71:53178 - "GET /categories HTTP/1.1" 200 OK
+INFO:     100.83.247.71:53188 - "GET /transactions/search?account_id=4&start=2025-06-08&end=2026-06-09&direction=debit HTTP/1.1" 200 OK
+INFO:     100.83.247.71:47778 - "GET /profile HTTP/1.1" 200 OK
+INFO:     100.83.247.71:47774 - "POST /push/register HTTP/1.1" 200 OK
+INFO:     100.83.247.71:47828 - "GET /reports/months HTTP/1.1" 200 OK
+INFO:     100.83.247.71:47822 - "GET /rewards HTTP/1.1" 200 OK
+INFO:     100.83.247.71:47838 - "GET /reports/spent?start=2026-03-10&end=2026-06-09 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:47810 - "GET /money-radar/summary HTTP/1.1" 200 OK
+INFO:     100.83.247.71:47884 - "GET /categories HTTP/1.1" 200 OK
+INFO:     100.83.247.71:47888 - "GET /reports/summary?month=2026-06 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:47896 - "GET /reports/spent?month=2026-06 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:47868 - "GET /networth HTTP/1.1" 200 OK
+INFO:     100.83.247.71:47792 - "GET /notifications HTTP/1.1" 200 OK
+INFO:     100.83.247.71:47908 - "GET /networth HTTP/1.1" 200 OK
+INFO:     100.83.247.71:47798 - "GET /notifications HTTP/1.1" 200 OK
+INFO:     100.83.247.71:47912 - "GET /stats HTTP/1.1" 200 OK
+INFO:     100.83.247.71:47914 - "GET /reports/spent?month=2026-05 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:47852 - "POST /ingest/sms HTTP/1.1" 201 Created
+INFO:     100.83.247.71:47922 - "POST /ingest/sms HTTP/1.1" 201 Created
+INFO:     100.83.247.71:47928 - "POST /ingest/sms HTTP/1.1" 202 Accepted
+INFO:     100.83.247.71:47930 - "POST /ingest/sms HTTP/1.1" 202 Accepted
+Adding missing padding.
+Ignoring padding error: Invalid padding bytes.
+INFO:     100.83.247.71:47936 - "POST /sync/gmail HTTP/1.1" 200 OK
+INFO:     100.83.247.71:45380 - "GET /reports/months HTTP/1.1" 200 OK
+INFO:     100.83.247.71:45384 - "GET /reports/summary?month=2026-06 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:43922 - "GET /reports/spent?month=2026-06 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:43930 - "GET /networth HTTP/1.1" 200 OK
+INFO:     100.83.247.71:43940 - "GET /stats HTTP/1.1" 200 OK
+INFO:     100.83.247.71:43952 - "GET /reports/spent?month=2026-05 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:50668 - "GET /portfolio HTTP/1.1" 200 OK
+Adding missing padding.
+Ignoring padding error: Invalid padding bytes.
+INFO:     100.83.247.71:33920 - "POST /sync/portfolio HTTP/1.1" 200 OK
+INFO:     100.83.247.71:33924 - "GET /portfolio HTTP/1.1" 200 OK
+INFO:     100.83.247.71:43870 - "GET /savings HTTP/1.1" 200 OK
+INFO:     100.83.247.71:36526 - "GET /bills HTTP/1.1" 200 OK
+INFO:     100.83.247.71:36538 - "GET /cards HTTP/1.1" 200 OK
+INFO:     100.83.247.71:36546 - "GET /cards/utilization HTTP/1.1" 200 OK
+INFO:     100.83.247.71:36562 - "GET /reports/months HTTP/1.1" 200 OK
+INFO:     100.83.247.71:36564 - "GET /reports/summary?month=2026-06 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:36570 - "GET /reports/spent?month=2026-06 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:36580 - "GET /networth HTTP/1.1" 200 OK
+INFO:     100.83.247.71:36590 - "GET /stats HTTP/1.1" 200 OK
+INFO:     100.83.247.71:36598 - "GET /reports/spent?month=2026-05 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:36602 - "GET /networth HTTP/1.1" 200 OK
+INFO:     100.83.247.71:36604 - "GET /notifications HTTP/1.1" 200 OK
+INFO:     100.83.247.71:56772 - "GET /categories HTTP/1.1" 200 OK
+INFO:     100.83.247.71:56770 - "GET /money-radar/summary HTTP/1.1" 200 OK
+INFO:     100.83.247.71:56778 - "GET /reports/breakdown?start=2026-03-10&end=2026-06-09 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:49624 - "GET /reports/months HTTP/1.1" 200 OK
+INFO:     100.83.247.71:49640 - "GET /reports/summary?month=2026-06 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:49644 - "GET /reports/spent?month=2026-06 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:49652 - "GET /networth HTTP/1.1" 200 OK
+INFO:     100.83.247.71:49656 - "GET /stats HTTP/1.1" 200 OK
+INFO:     100.83.247.71:49666 - "GET /reports/spent?month=2026-05 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:49672 - "GET /networth HTTP/1.1" 200 OK
+INFO:     100.83.247.71:49674 - "GET /rewards HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50153 - "GET /openapi.json HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:55674 - "GET / HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:55883 - "GET /docs HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:55883 - "GET /favicon.ico HTTP/1.1" 401 Unauthorized
+INFO:     100.83.247.71:46560 - "GET /profile HTTP/1.1" 200 OK
+INFO:     100.83.247.71:46570 - "POST /push/register HTTP/1.1" 200 OK
+INFO:     100.83.247.71:35546 - "GET /reports/months HTTP/1.1" 200 OK
+INFO:     100.83.247.71:35538 - "GET /rewards HTTP/1.1" 200 OK
+INFO:     100.83.247.71:35530 - "GET /money-radar/summary HTTP/1.1" 200 OK
+INFO:     100.83.247.71:35560 - "GET /reports/spent?start=2026-03-13&end=2026-06-12 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:46576 - "GET /notifications HTTP/1.1" 200 OK
+INFO:     100.83.247.71:35514 - "GET /notifications HTTP/1.1" 200 OK
+INFO:     100.83.247.71:35570 - "GET /reports/summary?month=2026-06 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:35606 - "GET /categories HTTP/1.1" 200 OK
+INFO:     100.83.247.71:35596 - "GET /reports/spent?month=2026-06 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:35576 - "GET /networth HTTP/1.1" 200 OK
+INFO:     100.83.247.71:35616 - "GET /networth HTTP/1.1" 200 OK
+INFO:     100.83.247.71:35620 - "GET /stats HTTP/1.1" 200 OK
+INFO:     100.83.247.71:35590 - "POST /ingest/sms HTTP/1.1" 201 Created
+INFO:     100.83.247.71:35628 - "GET /reports/spent?month=2026-05 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:35638 - "POST /ingest/sms HTTP/1.1" 202 Accepted
+INFO:     100.83.247.71:35646 - "POST /ingest/sms HTTP/1.1" 201 Created
+INFO:     100.83.247.71:35654 - "POST /ingest/sms HTTP/1.1" 201 Created
+INFO:     100.83.247.71:35670 - "POST /ingest/sms HTTP/1.1" 201 Created
+INFO:     100.83.247.71:35686 - "POST /ingest/sms HTTP/1.1" 201 Created
+INFO:     100.83.247.71:35692 - "POST /ingest/sms HTTP/1.1" 201 Created
+INFO:     100.83.247.71:35708 - "POST /ingest/sms HTTP/1.1" 201 Created
+INFO:     100.83.247.71:35712 - "POST /ingest/sms HTTP/1.1" 201 Created
+INFO:     100.83.247.71:59984 - "POST /ingest/sms HTTP/1.1" 201 Created
+INFO:     100.83.247.71:59994 - "POST /ingest/sms HTTP/1.1" 201 Created
+INFO:     100.83.247.71:60006 - "POST /ingest/sms HTTP/1.1" 202 Accepted
+INFO:     100.83.247.71:60020 - "POST /ingest/sms HTTP/1.1" 202 Accepted
+INFO:     100.83.247.71:60022 - "POST /ingest/sms HTTP/1.1" 202 Accepted
+INFO:     100.83.247.71:60032 - "POST /ingest/sms HTTP/1.1" 201 Created
+INFO:     100.83.247.71:60042 - "POST /ingest/sms HTTP/1.1" 202 Accepted
+INFO:     100.83.247.71:60056 - "POST /ingest/sms HTTP/1.1" 202 Accepted
+INFO:     100.83.247.71:60068 - "POST /ingest/sms HTTP/1.1" 202 Accepted
+INFO:     100.83.247.71:60076 - "POST /ingest/sms HTTP/1.1" 201 Created
+INFO:     100.83.247.71:37678 - "POST /ingest/sms HTTP/1.1" 202 Accepted
+INFO:     100.83.247.71:37686 - "POST /ingest/sms HTTP/1.1" 202 Accepted
+INFO:     100.83.247.71:37702 - "POST /ingest/sms HTTP/1.1" 202 Accepted
+INFO:     100.83.247.71:37716 - "POST /ingest/sms HTTP/1.1" 202 Accepted
+INFO:     100.83.247.71:37732 - "POST /ingest/sms HTTP/1.1" 202 Accepted
+INFO:     100.83.247.71:37740 - "POST /ingest/sms HTTP/1.1" 202 Accepted
+INFO:     100.83.247.71:37744 - "POST /ingest/sms HTTP/1.1" 201 Created
+INFO:     100.83.247.71:37754 - "POST /sync/gmail HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/Users/harshkhandelwal/Documents/expense-tracker/backend/.venv/lib/python3.14/site-packages/uvicorn/protocols/http/h11_impl.py", line 415, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        self.scope, self.receive, self.send
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/harshkhandelwal/Documents/expense-tracker/backend/.venv/lib/python3.14/site-packages/uvicorn/middleware/proxy_headers.py", line 63, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/harshkhandelwal/Documents/expense-tracker/backend/.venv/lib/python3.14/site-packages/fastapi/applications.py", line 1159, in __call__
+    await super().__call__(scope, receive, send)
+  File "/Users/harshkhandelwal/Documents/expense-tracker/backend/.venv/lib/python3.14/site-packages/starlette/applications.py", line 90, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Users/harshkhandelwal/Documents/expense-tracker/backend/.venv/lib/python3.14/site-packages/starlette/middleware/errors.py", line 186, in __call__
+    raise exc
+  File "/Users/harshkhandelwal/Documents/expense-tracker/backend/.venv/lib/python3.14/site-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/Users/harshkhandelwal/Documents/expense-tracker/backend/.venv/lib/python3.14/site-packages/starlette/middleware/base.py", line 191, in __call__
+    with recv_stream, send_stream, collapse_excgroups():
+                                   ~~~~~~~~~~~~~~~~~~^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.4/Frameworks/Python.framework/Versions/3.14/lib/python3.14/contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "/Users/harshkhandelwal/Documents/expense-tracker/backend/.venv/lib/python3.14/site-packages/starlette/_utils.py", line 87, in collapse_excgroups
+    raise exc
+  File "/Users/harshkhandelwal/Documents/expense-tracker/backend/.venv/lib/python3.14/site-packages/starlette/middleware/base.py", line 193, in __call__
+    response = await self.dispatch_func(request, call_next)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/harshkhandelwal/Documents/expense-tracker/backend/app/main.py", line 53, in app_lock_middleware
+    return await call_next(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/harshkhandelwal/Documents/expense-tracker/backend/.venv/lib/python3.14/site-packages/starlette/middleware/base.py", line 168, in call_next
+    raise app_exc from app_exc.__cause__ or app_exc.__context__
+  File "/Users/harshkhandelwal/Documents/expense-tracker/backend/.venv/lib/python3.14/site-packages/starlette/middleware/base.py", line 144, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "/Users/harshkhandelwal/Documents/expense-tracker/backend/.venv/lib/python3.14/site-packages/starlette/middleware/cors.py", line 88, in __call__
+    await self.app(scope, receive, send)
+  File "/Users/harshkhandelwal/Documents/expense-tracker/backend/.venv/lib/python3.14/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/Users/harshkhandelwal/Documents/expense-tracker/backend/.venv/lib/python3.14/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/Users/harshkhandelwal/Documents/expense-tracker/backend/.venv/lib/python3.14/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/Users/harshkhandelwal/Documents/expense-tracker/backend/.venv/lib/python3.14/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/Users/harshkhandelwal/Documents/expense-tracker/backend/.venv/lib/python3.14/site-packages/starlette/routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Users/harshkhandelwal/Documents/expense-tracker/backend/.venv/lib/python3.14/site-packages/starlette/routing.py", line 680, in app
+    await route.handle(scope, receive, send)
+  File "/Users/harshkhandelwal/Documents/expense-tracker/backend/.venv/lib/python3.14/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/Users/harshkhandelwal/Documents/expense-tracker/backend/.venv/lib/python3.14/site-packages/fastapi/routing.py", line 134, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/Users/harshkhandelwal/Documents/expense-tracker/backend/.venv/lib/python3.14/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/Users/harshkhandelwal/Documents/expense-tracker/backend/.venv/lib/python3.14/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/Users/harshkhandelwal/Documents/expense-tracker/backend/.venv/lib/python3.14/site-packages/fastapi/routing.py", line 120, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "/Users/harshkhandelwal/Documents/expense-tracker/backend/.venv/lib/python3.14/site-packages/fastapi/routing.py", line 674, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/Users/harshkhandelwal/Documents/expense-tracker/backend/.venv/lib/python3.14/site-packages/fastapi/routing.py", line 328, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/harshkhandelwal/Documents/expense-tracker/backend/app/routers/sync.py", line 46, in sync_gmail
+    fields = gmail.fetch_gmail_fields()
+  File "/Users/harshkhandelwal/Documents/expense-tracker/backend/app/services/gmail.py", line 38, in fetch_gmail_fields
+    creds.refresh(Request())
+    ~~~~~~~~~~~~~^^^^^^^^^^^
+  File "/Users/harshkhandelwal/Documents/expense-tracker/backend/.venv/lib/python3.14/site-packages/google/auth/credentials.py", line 482, in refresh
+    self._perform_refresh_token(request)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/harshkhandelwal/Documents/expense-tracker/backend/.venv/lib/python3.14/site-packages/google/oauth2/credentials.py", line 435, in _perform_refresh_token
+    ) = reauth.refresh_grant(
+        ~~~~~~~~~~~~~~~~~~~~^
+        request,
+        ^^^^^^^^
+    ...<6 lines>...
+        enable_reauth_refresh=self._enable_reauth_refresh,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/harshkhandelwal/Documents/expense-tracker/backend/.venv/lib/python3.14/site-packages/google/oauth2/reauth.py", line 370, in refresh_grant
+    _client._handle_error_response(response_data, retryable_error)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/harshkhandelwal/Documents/expense-tracker/backend/.venv/lib/python3.14/site-packages/google/oauth2/_client.py", line 73, in _handle_error_response
+    raise exceptions.RefreshError(
+        error_details, response_data, retryable=retryable_error
+    )
+google.auth.exceptions.RefreshError: ('invalid_grant: Token has been expired or revoked.', {'error': 'invalid_grant', 'error_description': 'Token has been expired or revoked.'})
+INFO:     100.83.247.71:37756 - "GET /reports/months HTTP/1.1" 200 OK
+INFO:     100.83.247.71:37758 - "GET /reports/summary?month=2026-06 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:37774 - "GET /reports/spent?month=2026-06 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:37782 - "GET /networth HTTP/1.1" 200 OK
+INFO:     100.83.247.71:37788 - "GET /stats HTTP/1.1" 200 OK
+INFO:     100.83.247.71:37798 - "GET /reports/spent?month=2026-05 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:39174 - "POST /sync/gmail HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/Users/harshkhandelwal/Documents/expense-tracker/backend/.venv/lib/python3.14/site-packages/uvicorn/protocols/http/h11_impl.py", line 415, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        self.scope, self.receive, self.send
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/harshkhandelwal/Documents/expense-tracker/backend/.venv/lib/python3.14/site-packages/uvicorn/middleware/proxy_headers.py", line 63, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/harshkhandelwal/Documents/expense-tracker/backend/.venv/lib/python3.14/site-packages/fastapi/applications.py", line 1159, in __call__
+    await super().__call__(scope, receive, send)
+  File "/Users/harshkhandelwal/Documents/expense-tracker/backend/.venv/lib/python3.14/site-packages/starlette/applications.py", line 90, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Users/harshkhandelwal/Documents/expense-tracker/backend/.venv/lib/python3.14/site-packages/starlette/middleware/errors.py", line 186, in __call__
+    raise exc
+  File "/Users/harshkhandelwal/Documents/expense-tracker/backend/.venv/lib/python3.14/site-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/Users/harshkhandelwal/Documents/expense-tracker/backend/.venv/lib/python3.14/site-packages/starlette/middleware/base.py", line 191, in __call__
+    with recv_stream, send_stream, collapse_excgroups():
+                                   ~~~~~~~~~~~~~~~~~~^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.4/Frameworks/Python.framework/Versions/3.14/lib/python3.14/contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "/Users/harshkhandelwal/Documents/expense-tracker/backend/.venv/lib/python3.14/site-packages/starlette/_utils.py", line 87, in collapse_excgroups
+    raise exc
+  File "/Users/harshkhandelwal/Documents/expense-tracker/backend/.venv/lib/python3.14/site-packages/starlette/middleware/base.py", line 193, in __call__
+    response = await self.dispatch_func(request, call_next)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/harshkhandelwal/Documents/expense-tracker/backend/app/main.py", line 53, in app_lock_middleware
+    return await call_next(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/harshkhandelwal/Documents/expense-tracker/backend/.venv/lib/python3.14/site-packages/starlette/middleware/base.py", line 168, in call_next
+    raise app_exc from app_exc.__cause__ or app_exc.__context__
+  File "/Users/harshkhandelwal/Documents/expense-tracker/backend/.venv/lib/python3.14/site-packages/starlette/middleware/base.py", line 144, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "/Users/harshkhandelwal/Documents/expense-tracker/backend/.venv/lib/python3.14/site-packages/starlette/middleware/cors.py", line 88, in __call__
+    await self.app(scope, receive, send)
+  File "/Users/harshkhandelwal/Documents/expense-tracker/backend/.venv/lib/python3.14/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/Users/harshkhandelwal/Documents/expense-tracker/backend/.venv/lib/python3.14/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/Users/harshkhandelwal/Documents/expense-tracker/backend/.venv/lib/python3.14/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/Users/harshkhandelwal/Documents/expense-tracker/backend/.venv/lib/python3.14/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/Users/harshkhandelwal/Documents/expense-tracker/backend/.venv/lib/python3.14/site-packages/starlette/routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Users/harshkhandelwal/Documents/expense-tracker/backend/.venv/lib/python3.14/site-packages/starlette/routing.py", line 680, in app
+    await route.handle(scope, receive, send)
+  File "/Users/harshkhandelwal/Documents/expense-tracker/backend/.venv/lib/python3.14/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/Users/harshkhandelwal/Documents/expense-tracker/backend/.venv/lib/python3.14/site-packages/fastapi/routing.py", line 134, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/Users/harshkhandelwal/Documents/expense-tracker/backend/.venv/lib/python3.14/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/Users/harshkhandelwal/Documents/expense-tracker/backend/.venv/lib/python3.14/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/Users/harshkhandelwal/Documents/expense-tracker/backend/.venv/lib/python3.14/site-packages/fastapi/routing.py", line 120, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "/Users/harshkhandelwal/Documents/expense-tracker/backend/.venv/lib/python3.14/site-packages/fastapi/routing.py", line 674, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/Users/harshkhandelwal/Documents/expense-tracker/backend/.venv/lib/python3.14/site-packages/fastapi/routing.py", line 328, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/harshkhandelwal/Documents/expense-tracker/backend/app/routers/sync.py", line 46, in sync_gmail
+    fields = gmail.fetch_gmail_fields()
+  File "/Users/harshkhandelwal/Documents/expense-tracker/backend/app/services/gmail.py", line 38, in fetch_gmail_fields
+    creds.refresh(Request())
+    ~~~~~~~~~~~~~^^^^^^^^^^^
+  File "/Users/harshkhandelwal/Documents/expense-tracker/backend/.venv/lib/python3.14/site-packages/google/auth/credentials.py", line 482, in refresh
+    self._perform_refresh_token(request)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/harshkhandelwal/Documents/expense-tracker/backend/.venv/lib/python3.14/site-packages/google/oauth2/credentials.py", line 435, in _perform_refresh_token
+    ) = reauth.refresh_grant(
+        ~~~~~~~~~~~~~~~~~~~~^
+        request,
+        ^^^^^^^^
+    ...<6 lines>...
+        enable_reauth_refresh=self._enable_reauth_refresh,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/harshkhandelwal/Documents/expense-tracker/backend/.venv/lib/python3.14/site-packages/google/oauth2/reauth.py", line 370, in refresh_grant
+    _client._handle_error_response(response_data, retryable_error)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/harshkhandelwal/Documents/expense-tracker/backend/.venv/lib/python3.14/site-packages/google/oauth2/_client.py", line 73, in _handle_error_response
+    raise exceptions.RefreshError(
+        error_details, response_data, retryable=retryable_error
+    )
+google.auth.exceptions.RefreshError: ('invalid_grant: Token has been expired or revoked.', {'error': 'invalid_grant', 'error_description': 'Token has been expired or revoked.'})
+INFO:     100.83.247.71:39186 - "GET /reports/months HTTP/1.1" 200 OK
+INFO:     100.83.247.71:39196 - "GET /reports/summary?month=2026-06 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:39206 - "GET /reports/spent?month=2026-06 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:39218 - "GET /networth HTTP/1.1" 200 OK
+INFO:     100.83.247.71:39226 - "GET /stats HTTP/1.1" 200 OK
+INFO:     100.83.247.71:39236 - "GET /reports/spent?month=2026-05 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:32888 - "GET /networth HTTP/1.1" 200 OK
+INFO:     100.83.247.71:32918 - "GET /networth HTTP/1.1" 200 OK
+INFO:     100.83.247.71:32930 - "GET /networth/projection?years=10 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:32942 - "GET /networth HTTP/1.1" 200 OK
+INFO:     100.83.247.71:32954 - "GET /networth/projection?years=10 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:32904 - "GET /networth/projection?years=10 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:60572 - "GET /reports/months HTTP/1.1" 200 OK
+INFO:     100.83.247.71:60582 - "GET /reports/summary?month=2026-06 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:60596 - "GET /reports/spent?month=2026-06 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:60610 - "GET /networth HTTP/1.1" 200 OK
+INFO:     100.83.247.71:60624 - "GET /stats HTTP/1.1" 200 OK
+INFO:     100.83.247.71:60626 - "GET /reports/spent?month=2026-05 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:60638 - "GET /networth HTTP/1.1" 200 OK
+INFO:     100.83.247.71:36846 - "GET /bills HTTP/1.1" 200 OK
+INFO:     100.83.247.71:36862 - "GET /cards HTTP/1.1" 200 OK
+INFO:     100.83.247.71:36878 - "GET /cards/utilization HTTP/1.1" 200 OK
+INFO:     100.83.247.71:38176 - "GET /categories HTTP/1.1" 200 OK
+INFO:     100.83.247.71:38190 - "GET /transactions/search?account_id=4&start=2025-06-11&end=2026-06-12&direction=debit HTTP/1.1" 200 OK
+INFO:     100.83.247.71:38200 - "GET /categories HTTP/1.1" 200 OK
+INFO:     100.83.247.71:38214 - "GET /transactions/search?account_id=2&start=2025-06-11&end=2026-06-12&direction=debit HTTP/1.1" 200 OK
+INFO:     Started server process [79262]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     127.0.0.1:64210 - "GET /health HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:64259 - "GET /health HTTP/1.1" 401 Unauthorized
+INFO:     100.83.247.71:33248 - "GET /profile HTTP/1.1" 200 OK
+INFO:     100.83.247.71:33252 - "POST /push/register HTTP/1.1" 200 OK
+INFO:     100.83.247.71:33278 - "GET /money-radar/summary HTTP/1.1" 200 OK
+INFO:     100.83.247.71:33318 - "GET /reports/spent?start=2026-03-14&end=2026-06-13 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:33306 - "GET /reports/months HTTP/1.1" 200 OK
+INFO:     100.83.247.71:33290 - "GET /rewards HTTP/1.1" 200 OK
+INFO:     100.83.247.71:33322 - "GET /categories HTTP/1.1" 200 OK
+INFO:     100.83.247.71:33254 - "GET /notifications HTTP/1.1" 200 OK
+INFO:     100.83.247.71:33338 - "GET /reports/summary?month=2026-06 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:33266 - "GET /notifications HTTP/1.1" 200 OK
+INFO:     100.83.247.71:33348 - "GET /reports/spent?month=2026-06 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:33340 - "GET /networth HTTP/1.1" 200 OK
+INFO:     100.83.247.71:33320 - "POST /ingest/sms HTTP/1.1" 202 Accepted
+INFO:     100.83.247.71:33364 - "GET /networth HTTP/1.1" 200 OK
+INFO:     100.83.247.71:33370 - "GET /stats HTTP/1.1" 200 OK
+INFO:     100.83.247.71:33376 - "GET /reports/spent?month=2026-05 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:33366 - "POST /ingest/sms HTTP/1.1" 202 Accepted
+INFO:     100.83.247.71:33388 - "POST /ingest/sms HTTP/1.1" 202 Accepted
+INFO:     100.83.247.71:33394 - "POST /ingest/sms HTTP/1.1" 202 Accepted
+INFO:     100.83.247.71:33398 - "POST /ingest/sms HTTP/1.1" 201 Created
+INFO:     100.83.247.71:33410 - "POST /ingest/sms HTTP/1.1" 201 Created
+INFO:     100.83.247.71:33422 - "POST /ingest/sms HTTP/1.1" 201 Created
+INFO:     100.83.247.71:33432 - "POST /ingest/sms HTTP/1.1" 202 Accepted
+INFO:     100.83.247.71:59658 - "POST /ingest/sms HTTP/1.1" 201 Created
+INFO:     100.83.247.71:59666 - "POST /ingest/sms HTTP/1.1" 201 Created
+INFO:     100.83.247.71:59676 - "POST /ingest/sms HTTP/1.1" 201 Created
+INFO:     100.83.247.71:59688 - "POST /ingest/sms HTTP/1.1" 201 Created
+INFO:     100.83.247.71:59690 - "POST /ingest/sms HTTP/1.1" 201 Created
+INFO:     100.83.247.71:59696 - "POST /ingest/sms HTTP/1.1" 202 Accepted
+INFO:     100.83.247.71:59706 - "POST /ingest/sms HTTP/1.1" 201 Created
+INFO:     100.83.247.71:59720 - "POST /ingest/sms HTTP/1.1" 202 Accepted
+INFO:     100.83.247.71:59728 - "POST /ingest/sms HTTP/1.1" 201 Created
+INFO:     100.83.247.71:59732 - "POST /ingest/sms HTTP/1.1" 202 Accepted
+INFO:     100.83.247.71:59748 - "POST /ingest/sms HTTP/1.1" 201 Created
+INFO:     100.83.247.71:59752 - "POST /ingest/sms HTTP/1.1" 202 Accepted
+INFO:     100.83.247.71:59758 - "POST /ingest/sms HTTP/1.1" 201 Created
+INFO:     100.83.247.71:59760 - "POST /sync/gmail HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/Users/harshkhandelwal/Documents/expense-tracker/backend/.venv/lib/python3.14/site-packages/uvicorn/protocols/http/h11_impl.py", line 415, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        self.scope, self.receive, self.send
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/harshkhandelwal/Documents/expense-tracker/backend/.venv/lib/python3.14/site-packages/uvicorn/middleware/proxy_headers.py", line 63, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/harshkhandelwal/Documents/expense-tracker/backend/.venv/lib/python3.14/site-packages/fastapi/applications.py", line 1159, in __call__
+    await super().__call__(scope, receive, send)
+  File "/Users/harshkhandelwal/Documents/expense-tracker/backend/.venv/lib/python3.14/site-packages/starlette/applications.py", line 90, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Users/harshkhandelwal/Documents/expense-tracker/backend/.venv/lib/python3.14/site-packages/starlette/middleware/errors.py", line 186, in __call__
+    raise exc
+  File "/Users/harshkhandelwal/Documents/expense-tracker/backend/.venv/lib/python3.14/site-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/Users/harshkhandelwal/Documents/expense-tracker/backend/.venv/lib/python3.14/site-packages/starlette/middleware/base.py", line 191, in __call__
+    with recv_stream, send_stream, collapse_excgroups():
+                                   ~~~~~~~~~~~~~~~~~~^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.4/Frameworks/Python.framework/Versions/3.14/lib/python3.14/contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "/Users/harshkhandelwal/Documents/expense-tracker/backend/.venv/lib/python3.14/site-packages/starlette/_utils.py", line 87, in collapse_excgroups
+    raise exc
+  File "/Users/harshkhandelwal/Documents/expense-tracker/backend/.venv/lib/python3.14/site-packages/starlette/middleware/base.py", line 193, in __call__
+    response = await self.dispatch_func(request, call_next)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/harshkhandelwal/Documents/expense-tracker/backend/app/main.py", line 53, in app_lock_middleware
+    return await call_next(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/harshkhandelwal/Documents/expense-tracker/backend/.venv/lib/python3.14/site-packages/starlette/middleware/base.py", line 168, in call_next
+    raise app_exc from app_exc.__cause__ or app_exc.__context__
+  File "/Users/harshkhandelwal/Documents/expense-tracker/backend/.venv/lib/python3.14/site-packages/starlette/middleware/base.py", line 144, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "/Users/harshkhandelwal/Documents/expense-tracker/backend/.venv/lib/python3.14/site-packages/starlette/middleware/cors.py", line 88, in __call__
+    await self.app(scope, receive, send)
+  File "/Users/harshkhandelwal/Documents/expense-tracker/backend/.venv/lib/python3.14/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/Users/harshkhandelwal/Documents/expense-tracker/backend/.venv/lib/python3.14/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/Users/harshkhandelwal/Documents/expense-tracker/backend/.venv/lib/python3.14/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/Users/harshkhandelwal/Documents/expense-tracker/backend/.venv/lib/python3.14/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/Users/harshkhandelwal/Documents/expense-tracker/backend/.venv/lib/python3.14/site-packages/starlette/routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Users/harshkhandelwal/Documents/expense-tracker/backend/.venv/lib/python3.14/site-packages/starlette/routing.py", line 680, in app
+    await route.handle(scope, receive, send)
+  File "/Users/harshkhandelwal/Documents/expense-tracker/backend/.venv/lib/python3.14/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/Users/harshkhandelwal/Documents/expense-tracker/backend/.venv/lib/python3.14/site-packages/fastapi/routing.py", line 134, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/Users/harshkhandelwal/Documents/expense-tracker/backend/.venv/lib/python3.14/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/Users/harshkhandelwal/Documents/expense-tracker/backend/.venv/lib/python3.14/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/Users/harshkhandelwal/Documents/expense-tracker/backend/.venv/lib/python3.14/site-packages/fastapi/routing.py", line 120, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "/Users/harshkhandelwal/Documents/expense-tracker/backend/.venv/lib/python3.14/site-packages/fastapi/routing.py", line 674, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/Users/harshkhandelwal/Documents/expense-tracker/backend/.venv/lib/python3.14/site-packages/fastapi/routing.py", line 328, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/harshkhandelwal/Documents/expense-tracker/backend/app/routers/sync.py", line 46, in sync_gmail
+    fields = gmail.fetch_gmail_fields()
+  File "/Users/harshkhandelwal/Documents/expense-tracker/backend/app/services/gmail.py", line 38, in fetch_gmail_fields
+    creds.refresh(Request())
+    ~~~~~~~~~~~~~^^^^^^^^^^^
+  File "/Users/harshkhandelwal/Documents/expense-tracker/backend/.venv/lib/python3.14/site-packages/google/auth/credentials.py", line 482, in refresh
+    self._perform_refresh_token(request)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/harshkhandelwal/Documents/expense-tracker/backend/.venv/lib/python3.14/site-packages/google/oauth2/credentials.py", line 435, in _perform_refresh_token
+    ) = reauth.refresh_grant(
+        ~~~~~~~~~~~~~~~~~~~~^
+        request,
+        ^^^^^^^^
+    ...<6 lines>...
+        enable_reauth_refresh=self._enable_reauth_refresh,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/harshkhandelwal/Documents/expense-tracker/backend/.venv/lib/python3.14/site-packages/google/oauth2/reauth.py", line 370, in refresh_grant
+    _client._handle_error_response(response_data, retryable_error)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/harshkhandelwal/Documents/expense-tracker/backend/.venv/lib/python3.14/site-packages/google/oauth2/_client.py", line 73, in _handle_error_response
+    raise exceptions.RefreshError(
+        error_details, response_data, retryable=retryable_error
+    )
+google.auth.exceptions.RefreshError: ('invalid_grant: Token has been expired or revoked.', {'error': 'invalid_grant', 'error_description': 'Token has been expired or revoked.'})
+INFO:     100.83.247.71:59768 - "GET /reports/months HTTP/1.1" 200 OK
+INFO:     100.83.247.71:59776 - "GET /reports/summary?month=2026-06 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:59786 - "GET /reports/spent?month=2026-06 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:59792 - "GET /networth HTTP/1.1" 200 OK
+INFO:     100.83.247.71:59808 - "GET /stats HTTP/1.1" 200 OK
+INFO:     100.83.247.71:47158 - "GET /reports/spent?month=2026-05 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:47166 - "POST /sync/gmail HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/Users/harshkhandelwal/Documents/expense-tracker/backend/.venv/lib/python3.14/site-packages/uvicorn/protocols/http/h11_impl.py", line 415, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        self.scope, self.receive, self.send
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/harshkhandelwal/Documents/expense-tracker/backend/.venv/lib/python3.14/site-packages/uvicorn/middleware/proxy_headers.py", line 63, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/harshkhandelwal/Documents/expense-tracker/backend/.venv/lib/python3.14/site-packages/fastapi/applications.py", line 1159, in __call__
+    await super().__call__(scope, receive, send)
+  File "/Users/harshkhandelwal/Documents/expense-tracker/backend/.venv/lib/python3.14/site-packages/starlette/applications.py", line 90, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Users/harshkhandelwal/Documents/expense-tracker/backend/.venv/lib/python3.14/site-packages/starlette/middleware/errors.py", line 186, in __call__
+    raise exc
+  File "/Users/harshkhandelwal/Documents/expense-tracker/backend/.venv/lib/python3.14/site-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/Users/harshkhandelwal/Documents/expense-tracker/backend/.venv/lib/python3.14/site-packages/starlette/middleware/base.py", line 191, in __call__
+    with recv_stream, send_stream, collapse_excgroups():
+                                   ~~~~~~~~~~~~~~~~~~^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.4/Frameworks/Python.framework/Versions/3.14/lib/python3.14/contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "/Users/harshkhandelwal/Documents/expense-tracker/backend/.venv/lib/python3.14/site-packages/starlette/_utils.py", line 87, in collapse_excgroups
+    raise exc
+  File "/Users/harshkhandelwal/Documents/expense-tracker/backend/.venv/lib/python3.14/site-packages/starlette/middleware/base.py", line 193, in __call__
+    response = await self.dispatch_func(request, call_next)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/harshkhandelwal/Documents/expense-tracker/backend/app/main.py", line 53, in app_lock_middleware
+    return await call_next(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/harshkhandelwal/Documents/expense-tracker/backend/.venv/lib/python3.14/site-packages/starlette/middleware/base.py", line 168, in call_next
+    raise app_exc from app_exc.__cause__ or app_exc.__context__
+  File "/Users/harshkhandelwal/Documents/expense-tracker/backend/.venv/lib/python3.14/site-packages/starlette/middleware/base.py", line 144, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "/Users/harshkhandelwal/Documents/expense-tracker/backend/.venv/lib/python3.14/site-packages/starlette/middleware/cors.py", line 88, in __call__
+    await self.app(scope, receive, send)
+  File "/Users/harshkhandelwal/Documents/expense-tracker/backend/.venv/lib/python3.14/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/Users/harshkhandelwal/Documents/expense-tracker/backend/.venv/lib/python3.14/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/Users/harshkhandelwal/Documents/expense-tracker/backend/.venv/lib/python3.14/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/Users/harshkhandelwal/Documents/expense-tracker/backend/.venv/lib/python3.14/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/Users/harshkhandelwal/Documents/expense-tracker/backend/.venv/lib/python3.14/site-packages/starlette/routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Users/harshkhandelwal/Documents/expense-tracker/backend/.venv/lib/python3.14/site-packages/starlette/routing.py", line 680, in app
+    await route.handle(scope, receive, send)
+  File "/Users/harshkhandelwal/Documents/expense-tracker/backend/.venv/lib/python3.14/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/Users/harshkhandelwal/Documents/expense-tracker/backend/.venv/lib/python3.14/site-packages/fastapi/routing.py", line 134, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/Users/harshkhandelwal/Documents/expense-tracker/backend/.venv/lib/python3.14/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/Users/harshkhandelwal/Documents/expense-tracker/backend/.venv/lib/python3.14/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/Users/harshkhandelwal/Documents/expense-tracker/backend/.venv/lib/python3.14/site-packages/fastapi/routing.py", line 120, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "/Users/harshkhandelwal/Documents/expense-tracker/backend/.venv/lib/python3.14/site-packages/fastapi/routing.py", line 674, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/Users/harshkhandelwal/Documents/expense-tracker/backend/.venv/lib/python3.14/site-packages/fastapi/routing.py", line 328, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/harshkhandelwal/Documents/expense-tracker/backend/app/routers/sync.py", line 46, in sync_gmail
+    fields = gmail.fetch_gmail_fields()
+  File "/Users/harshkhandelwal/Documents/expense-tracker/backend/app/services/gmail.py", line 38, in fetch_gmail_fields
+    creds.refresh(Request())
+    ~~~~~~~~~~~~~^^^^^^^^^^^
+  File "/Users/harshkhandelwal/Documents/expense-tracker/backend/.venv/lib/python3.14/site-packages/google/auth/credentials.py", line 482, in refresh
+    self._perform_refresh_token(request)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/harshkhandelwal/Documents/expense-tracker/backend/.venv/lib/python3.14/site-packages/google/oauth2/credentials.py", line 435, in _perform_refresh_token
+    ) = reauth.refresh_grant(
+        ~~~~~~~~~~~~~~~~~~~~^
+        request,
+        ^^^^^^^^
+    ...<6 lines>...
+        enable_reauth_refresh=self._enable_reauth_refresh,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/harshkhandelwal/Documents/expense-tracker/backend/.venv/lib/python3.14/site-packages/google/oauth2/reauth.py", line 370, in refresh_grant
+    _client._handle_error_response(response_data, retryable_error)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/harshkhandelwal/Documents/expense-tracker/backend/.venv/lib/python3.14/site-packages/google/oauth2/_client.py", line 73, in _handle_error_response
+    raise exceptions.RefreshError(
+        error_details, response_data, retryable=retryable_error
+    )
+google.auth.exceptions.RefreshError: ('invalid_grant: Token has been expired or revoked.', {'error': 'invalid_grant', 'error_description': 'Token has been expired or revoked.'})
+INFO:     100.83.247.71:47170 - "GET /reports/months HTTP/1.1" 200 OK
+INFO:     100.83.247.71:47174 - "GET /reports/summary?month=2026-06 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:47186 - "GET /reports/spent?month=2026-06 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:47190 - "GET /networth HTTP/1.1" 200 OK
+INFO:     100.83.247.71:47194 - "GET /stats HTTP/1.1" 200 OK
+INFO:     100.83.247.71:47196 - "GET /reports/spent?month=2026-05 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:47198 - "GET /portfolio HTTP/1.1" 200 OK
+INFO:     100.83.247.71:47208 - "GET /categories HTTP/1.1" 200 OK
+INFO:     100.83.247.71:47218 - "GET /money-radar/summary HTTP/1.1" 200 OK
+INFO:     100.83.247.71:47228 - "GET /reports/breakdown?start=2026-03-14&end=2026-06-13 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:59498 - "GET /money-radar HTTP/1.1" 200 OK
+INFO:     100.83.247.71:59508 - "POST /money-radar/seen HTTP/1.1" 200 OK
+INFO:     100.83.247.71:57168 - "GET /reports/rails?start=2026-03-14&end=2026-06-13 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:57174 - "GET /reports/spending-patterns?start=2026-03-14&end=2026-06-13 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54719 - "GET /health HTTP/1.1" 401 Unauthorized
+INFO:     100.83.247.71:33912 - "GET /reports/savings-rate?months=6 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:33924 - "GET /insights HTTP/1.1" 200 OK
+INFO:     100.83.247.71:33940 - "GET /reports/subscriptions?start=2026-03-14&end=2026-06-13 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:33948 - "GET /reports/small-leaks?start=2026-03-14&end=2026-06-13 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:33954 - "GET /goals HTTP/1.1" 200 OK
+INFO:     100.83.247.71:44624 - "GET /money-radar HTTP/1.1" 200 OK
+INFO:     100.83.247.71:44640 - "POST /money-radar/seen HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56195 - "GET /health HTTP/1.1" 401 Unauthorized
+INFO:     100.83.247.71:37452 - "GET /reports/months HTTP/1.1" 200 OK
+INFO:     100.83.247.71:37462 - "GET /reports/summary?month=2026-06 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:37478 - "GET /reports/spent?month=2026-06 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:37484 - "GET /networth HTTP/1.1" 200 OK
+INFO:     100.83.247.71:37500 - "GET /stats HTTP/1.1" 200 OK
+INFO:     100.83.247.71:37514 - "GET /reports/spent?month=2026-05 HTTP/1.1" 200 OK
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [79262]
+INFO:     Started server process [5558]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     127.0.0.1:51588 - "GET /health HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:51590 - "GET /health HTTP/1.1" 401 Unauthorized
+INFO:     100.83.247.71:36700 - "GET /networth HTTP/1.1" 401 Unauthorized
+INFO:     100.83.247.71:36704 - "GET /auth/config HTTP/1.1" 200 OK
+INFO:     100.83.247.71:36708 - "GET /auth/nonce HTTP/1.1" 200 OK
+INFO:     100.83.247.71:41058 - "POST /auth/verify-google HTTP/1.1" 200 OK
+INFO:     100.83.247.71:41088 - "GET /profile HTTP/1.1" 200 OK
+INFO:     100.83.247.71:41120 - "GET /rewards HTTP/1.1" 200 OK
+INFO:     100.83.247.71:41182 - "GET /rewards HTTP/1.1" 200 OK
+INFO:     100.83.247.71:41106 - "GET /money-radar/summary HTTP/1.1" 200 OK
+INFO:     100.83.247.71:41146 - "GET /money-radar/summary HTTP/1.1" 200 OK
+INFO:     100.83.247.71:41140 - "GET /reports/spent?start=2026-03-15&end=2026-06-14 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:41152 - "GET /reports/months HTTP/1.1" 200 OK
+INFO:     100.83.247.71:41198 - "GET /reports/spent?start=2026-03-15&end=2026-06-14 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:41206 - "GET /reports/months HTTP/1.1" 200 OK
+INFO:     100.83.247.71:41126 - "GET /reports/months HTTP/1.1" 200 OK
+INFO:     100.83.247.71:41196 - "GET /reports/months HTTP/1.1" 200 OK
+INFO:     100.83.247.71:41212 - "GET /categories HTTP/1.1" 200 OK
+INFO:     100.83.247.71:41218 - "GET /reports/summary?month=2026-06 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:41222 - "GET /categories HTTP/1.1" 200 OK
+INFO:     100.83.247.71:41236 - "GET /reports/summary?month=2026-06 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:41230 - "GET /reports/summary?month=2026-06 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:41246 - "GET /reports/summary?month=2026-06 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:41266 - "GET /reports/spent?month=2026-06 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:41254 - "GET /reports/spent?month=2026-06 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:41250 - "GET /reports/spent?month=2026-06 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:41272 - "GET /reports/spent?month=2026-06 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:41276 - "GET /networth HTTP/1.1" 200 OK
+INFO:     100.83.247.71:41166 - "GET /notifications HTTP/1.1" 200 OK
+INFO:     100.83.247.71:41312 - "GET /stats HTTP/1.1" 200 OK
+INFO:     100.83.247.71:41092 - "GET /notifications HTTP/1.1" 200 OK
+INFO:     100.83.247.71:41294 - "GET /networth HTTP/1.1" 200 OK
+INFO:     100.83.247.71:41290 - "GET /networth HTTP/1.1" 200 OK
+INFO:     100.83.247.71:41306 - "GET /networth HTTP/1.1" 200 OK
+INFO:     100.83.247.71:41316 - "GET /reports/spent?month=2026-05 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:41330 - "GET /stats HTTP/1.1" 200 OK
+INFO:     100.83.247.71:41320 - "GET /stats HTTP/1.1" 200 OK
+INFO:     100.83.247.71:41344 - "GET /stats HTTP/1.1" 200 OK
+INFO:     100.83.247.71:41358 - "GET /reports/spent?month=2026-05 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:41362 - "GET /reports/spent?month=2026-05 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:41366 - "GET /reports/spent?month=2026-05 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:41356 - "GET /networth HTTP/1.1" 200 OK
+INFO:     100.83.247.71:41374 - "GET /notifications HTTP/1.1" 200 OK
+INFO:     100.83.247.71:41382 - "GET /reports/months HTTP/1.1" 200 OK
+INFO:     100.83.247.71:48788 - "GET /reports/summary?month=2026-06 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:48800 - "GET /reports/spent?month=2026-06 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:48802 - "GET /networth HTTP/1.1" 200 OK
+INFO:     100.83.247.71:48818 - "GET /stats HTTP/1.1" 200 OK
+INFO:     100.83.247.71:48832 - "GET /reports/spent?month=2026-05 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:48838 - "GET /networth HTTP/1.1" 200 OK
+INFO:     100.83.247.71:54598 - "GET /categories HTTP/1.1" 200 OK
+INFO:     100.83.247.71:54600 - "GET /money-radar/summary HTTP/1.1" 200 OK
+INFO:     100.83.247.71:54614 - "GET /reports/breakdown?start=2026-03-15&end=2026-06-14 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:54626 - "GET /reports/months HTTP/1.1" 200 OK
+INFO:     100.83.247.71:54634 - "GET /reports/summary?month=2026-06 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:54646 - "GET /reports/spent?month=2026-06 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:54672 - "GET /networth HTTP/1.1" 200 OK
+INFO:     100.83.247.71:54656 - "GET /networth HTTP/1.1" 200 OK
+INFO:     100.83.247.71:54684 - "GET /stats HTTP/1.1" 200 OK
+INFO:     100.83.247.71:54692 - "GET /reports/spent?month=2026-05 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:34222 - "GET /categories HTTP/1.1" 200 OK
+INFO:     100.83.247.71:34224 - "GET /transactions/search?category_id=1&start=2026-06-01&end=2026-06-30&direction=debit HTTP/1.1" 200 OK
+INFO:     100.83.247.71:59344 - "GET /reports/months HTTP/1.1" 200 OK
+INFO:     100.83.247.71:59350 - "GET /reports/summary?month=2026-06 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:59354 - "GET /reports/spent?month=2026-06 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:59362 - "GET /networth HTTP/1.1" 200 OK
+INFO:     100.83.247.71:59374 - "GET /stats HTTP/1.1" 200 OK
+INFO:     100.83.247.71:59366 - "GET /networth HTTP/1.1" 200 OK
+INFO:     100.83.247.71:59380 - "GET /reports/spent?month=2026-05 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:59388 - "GET /categories HTTP/1.1" 200 OK
+INFO:     100.83.247.71:59398 - "GET /transactions/search?category_id=9&start=2026-06-01&end=2026-06-30&direction=debit HTTP/1.1" 200 OK
+INFO:     100.83.247.71:44852 - "GET /reports/months HTTP/1.1" 200 OK
+INFO:     100.83.247.71:44856 - "GET /reports/summary?month=2026-06 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:44864 - "GET /reports/spent?month=2026-06 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:44876 - "GET /networth HTTP/1.1" 200 OK
+INFO:     100.83.247.71:44902 - "GET /stats HTTP/1.1" 200 OK
+INFO:     100.83.247.71:44886 - "GET /networth HTTP/1.1" 200 OK
+INFO:     100.83.247.71:44914 - "GET /reports/spent?month=2026-05 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:51066 - "GET /notifications HTTP/1.1" 200 OK
+INFO:     100.83.247.71:51076 - "GET /categories HTTP/1.1" 200 OK
+INFO:     100.83.247.71:51090 - "GET /budget/2026-06 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:51102 - "GET /reports/months HTTP/1.1" 200 OK
+INFO:     100.83.247.71:51106 - "GET /reports/summary?month=2026-06 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:36186 - "GET /reports/spent?month=2026-06 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:36196 - "GET /networth HTTP/1.1" 200 OK
+INFO:     100.83.247.71:36208 - "GET /networth HTTP/1.1" 200 OK
+INFO:     100.83.247.71:36220 - "GET /stats HTTP/1.1" 200 OK
+INFO:     100.83.247.71:36224 - "GET /reports/spent?month=2026-05 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:36226 - "GET /notifications HTTP/1.1" 200 OK
+INFO:     100.83.247.71:36246 - "GET /categories HTTP/1.1" 200 OK
+INFO:     100.83.247.71:36240 - "GET /money-radar/summary HTTP/1.1" 200 OK
+INFO:     100.83.247.71:36238 - "GET /reports/breakdown?start=2026-03-15&end=2026-06-14 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:36262 - "GET /reports/months HTTP/1.1" 200 OK
+INFO:     100.83.247.71:36270 - "GET /reports/summary?month=2026-06 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:36274 - "GET /reports/spent?month=2026-06 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:36278 - "GET /networth HTTP/1.1" 200 OK
+INFO:     100.83.247.71:36296 - "GET /stats HTTP/1.1" 200 OK
+INFO:     100.83.247.71:36290 - "GET /networth HTTP/1.1" 200 OK
+INFO:     100.83.247.71:36306 - "GET /reports/spent?month=2026-05 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:43106 - "GET /reports/rails?start=2026-03-15&end=2026-06-14 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:43108 - "GET /reports/spending-patterns?start=2026-03-15&end=2026-06-14 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:36460 - "GET /reports/breakdown?start=2025-12-15&end=2026-06-14 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:36468 - "GET /reports/breakdown?start=2026-03-15&end=2026-06-14 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:36484 - "GET /reports/breakdown?start=2026-06-01&end=2026-06-14 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:36486 - "GET /reports/months HTTP/1.1" 200 OK
+INFO:     100.83.247.71:36492 - "GET /reports/summary?month=2026-06 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:36508 - "GET /reports/spent?month=2026-06 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:36516 - "GET /networth HTTP/1.1" 200 OK
+INFO:     100.83.247.71:36518 - "GET /networth HTTP/1.1" 200 OK
+INFO:     100.83.247.71:36534 - "GET /stats HTTP/1.1" 200 OK
+INFO:     100.83.247.71:36546 - "GET /reports/spent?month=2026-05 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:43448 - "GET /networth HTTP/1.1" 200 OK
+INFO:     100.83.247.71:48092 - "GET /bills HTTP/1.1" 200 OK
+INFO:     100.83.247.71:48108 - "GET /cards HTTP/1.1" 200 OK
+INFO:     100.83.247.71:48118 - "GET /cards/utilization HTTP/1.1" 200 OK
+INFO:     100.83.247.71:48120 - "GET /categories HTTP/1.1" 200 OK
+INFO:     100.83.247.71:48126 - "GET /transactions/search?account_id=4&start=2025-06-13&end=2026-06-14&direction=debit HTTP/1.1" 200 OK
+INFO:     100.83.247.71:39820 - "GET /reports/months HTTP/1.1" 200 OK
+INFO:     100.83.247.71:51684 - "GET /reports/summary?month=2026-06 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:51698 - "GET /reports/spent?month=2026-06 HTTP/1.1" 200 OK
+INFO:     100.83.247.71:51560 - "GET /savings HTTP/1.1" 200 OK
+INFO:     100.83.247.71:51708 - "GET /networth HTTP/1.1" 200 OK
+INFO:     100.83.247.71:39826 - "GET /networth HTTP/1.1" 200 OK
+INFO:     100.83.247.71:56072 - "GET /stats HTTP/1.1" 200 OK
+INFO:     100.83.247.71:38954 - "GET /reports/spent?month=2026-05 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59636 - "GET /health HTTP/1.1" 401 Unauthorized
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [5558]
+INFO:     Started server process [3013]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     127.0.0.1:58429 - "GET /health HTTP/1.1" 401 Unauthorized
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [3013]
+INFO:     Started server process [3562]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [3562]
+INFO:     Started server process [42883]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [42883]
+INFO:     Started server process [52600]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [52600]
+INFO:     Started server process [73367]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [73367]
+INFO:     Started server process [82739]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [82739]
+INFO:     Started server process [13435]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [13435]
+INFO:     Started server process [19944]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     127.0.0.1:58726 - "GET /healthz HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:58730 - "GET /readyz HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:58732 - "POST /products HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:60461 - "GET /metrics/ranges HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:60466 - "GET /metrics/health HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:60467 - "GET /metrics/es/health HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:60468 - "GET /metrics/es/activity?days=7 HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:60469 - "GET /metrics/coverage HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:60470 - "GET /metrics/queues HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:60472 - "GET /metrics/budget HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:60475 - "GET /metrics/attribution HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:60477 - "GET /metrics/divergence HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:60478 - "GET /metrics/jobs HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:60480 - "GET /metrics/classified HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:60482 - "GET /metrics/distributions?top=15 HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:60484 - "GET /metrics/ranges HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:60487 - "GET /metrics/health HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:60488 - "GET /metrics/es/health HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:60490 - "GET /metrics/es/activity?days=7 HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:60495 - "GET /metrics/coverage HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:60496 - "GET /metrics/queues HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:60497 - "GET /metrics/budget HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:60498 - "GET /metrics/attribution HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:60500 - "GET /metrics/divergence HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:60503 - "GET /metrics/jobs HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:60505 - "GET /metrics/classified HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:60506 - "GET /metrics/distributions?top=15 HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:60508 - "GET /metrics/daily?days=30 HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:60510 - "GET /metrics/es/health HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:60512 - "GET /metrics/classified HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:60514 - "GET /metrics/distributions?top=15 HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:60516 - "GET /metrics/daily?days=30 HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:60519 - "GET /metrics/daily?days=30 HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:60530 - "POST /metrics/cache/clear HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:60531 - "GET /metrics/classified HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:60532 - "GET /metrics/distributions?top=15 HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:60533 - "GET /metrics/daily?days=30 HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:60534 - "GET /metrics/es/health HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:60537 - "GET /metrics/classified HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:60540 - "GET /metrics/distributions?top=15 HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:60541 - "GET /metrics/daily?days=30 HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:60543 - "GET /metrics/es/health HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:60545 - "GET /metrics/ranges HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:60547 - "GET /metrics/ranges HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:60551 - "GET /metrics/classified HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:60552 - "GET /metrics/distributions?top=15 HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:60553 - "GET /metrics/daily?days=30 HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:60555 - "GET /metrics/es/health HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:60566 - "GET /metrics/classified HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:60567 - "GET /metrics/distributions?top=15 HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:60568 - "GET /metrics/daily?days=30 HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:60603 - "GET /metrics/health HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:60604 - "GET /metrics/es/health HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:60605 - "GET /metrics/es/activity?days=30 HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:60606 - "GET /metrics/coverage HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:60607 - "GET /metrics/queues HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:60608 - "GET /metrics/budget HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:60610 - "GET /metrics/attribution HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:60612 - "GET /metrics/divergence HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:60614 - "GET /metrics/jobs HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:60620 - "GET /metrics/health HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:60623 - "GET /metrics/es/health HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:60624 - "GET /metrics/es/activity?days=30 HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:60625 - "GET /metrics/coverage HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:60626 - "GET /metrics/queues HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:60627 - "GET /metrics/budget HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:60629 - "GET /metrics/attribution HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:60631 - "GET /metrics/divergence HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:60633 - "GET /metrics/jobs HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:60636 - "GET /metrics/health HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:60638 - "GET /metrics/es/health HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:60642 - "GET /metrics/es/activity?days=30 HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:60643 - "GET /metrics/coverage HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:60644 - "GET /metrics/queues HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:60646 - "GET /metrics/budget HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:60647 - "GET /metrics/attribution HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:60650 - "GET /metrics/divergence HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:60651 - "GET /metrics/jobs HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:60657 - "GET /metrics/classified HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:60658 - "GET /metrics/distributions?top=15 HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:60659 - "GET /metrics/daily?days=30 HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:60662 - "GET /metrics/classified HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:60663 - "GET /metrics/distributions?top=15 HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:60665 - "GET /metrics/daily?days=30 HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:60667 - "GET /metrics/classified HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:60669 - "GET /metrics/distributions?top=15 HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:60671 - "GET /metrics/daily?days=30 HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:55121 - "GET /health HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:55179 - "GET /health HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:55241 - "GET /health HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:55243 - "GET /v1/health HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:51283 - "GET /metrics/tier-activity/refresh HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:51283 - "GET /favicon.ico HTTP/1.1" 401 Unauthorized
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [19944]
+INFO:     Started server process [6623]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [6623]
+INFO:     Started server process [62310]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)

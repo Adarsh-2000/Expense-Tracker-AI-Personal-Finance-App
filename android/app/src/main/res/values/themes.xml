@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base application theme. The Compose UI applies LedgerNoirTheme; this
+         style only provides the launch/window theming Android reads from the
+         manifest before Compose takes over. -->
+    <style name="Theme.LedgerNoir" parent="android:Theme.Material.NoActionBar">
+        <item name="android:statusBarColor">#0B0B0D</item>
+        <item name="android:navigationBarColor">#0B0B0D</item>
+        <item name="android:windowBackground">#0B0B0D</item>
+    </style>
+</resources>

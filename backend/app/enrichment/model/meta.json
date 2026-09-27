@@ -1,0 +1,25 @@
+{
+  "categories": [
+    "atm_cash",
+    "bills_utilities",
+    "education",
+    "emi_loans",
+    "entertainment",
+    "fees_charges",
+    "food_dining",
+    "groceries",
+    "health",
+    "investments",
+    "rent_housing",
+    "shopping",
+    "subscriptions",
+    "transfers_p2p",
+    "transport_fuel",
+    "travel"
+  ],
+  "macro_f1_holdout": 0.9899,
+  "train_rows": 14760,
+  "test_rows": 3691,
+  "throughput_txn_per_sec": 23070,
+  "model": "TfidfVectorizer(word 1-2 + char_wb 2-5) -> LogisticRegression(balanced)"
+}
